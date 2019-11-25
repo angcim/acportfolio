@@ -17,23 +17,15 @@ h1, h2, h3, p{
 
 /* Logo header */
 
-#top1, #top2, #mobileIntro {
-  width: 100%;
-}
-
-#top1, #top2{
-  margin: 0;
-  padding: 1.5em;
-  width: 100%;
-}
-
 #top1{
+  width: 100%;
   background-color: #164c73;
+  padding-bottom: 3em;
 }
 
 #top2{
   background-color: #88abe9;
-  padding-bottom: 0;
+  padding-bottom: 1em;
 }
 
 #mobileFlex{
@@ -41,19 +33,19 @@ h1, h2, h3, p{
 }
 
 #mobileLogo{
-  margin: 1em;
+  margin: 0em 0.75em 0.5em 0.75em;
 }
 
 h1{
-  margin-top: 1.5em;
+  margin-top: 1.6em;
   font-family: "Quicksand";
-  font-size: 45px;
+  font-size: 36px;
+  padding-right: 0.5em;
 }
 
 /* Introduction */
 
 #mobileIntro{
-  width: 110%;
   background-color: #8eb1de;
   padding: 0.25em;
 }
@@ -75,7 +67,7 @@ h3{
 
 #location{
   margin-left: -0.25em;
-  width: 110%;
+  width: 102.25%;
   border-bottom: 20px solid #b8cff1;
 }
 
@@ -85,9 +77,9 @@ h3{
 
 
 /* ------ */
-div {
+/* div {
   padding: 7em;
   width: 20%;
   background-color: #c2d3ef;
   margin: 1em;
-}
+} */
