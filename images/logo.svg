@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F1F8FF;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{fill:#FF7687;}
+	.st3{font-family:'Bryant-BoldAlt';}
+	.st4{font-size:78.4536px;}
+	.st5{font-family:'Bryant-Medium';}
+	.st6{font-size:76.4922px;}
+	.st7{fill:#FDC8D1;}
+	.st8{fill:#6698D4;}
+	.st9{fill:#F1F8FF;}
+	.st10{fill:#A9CDED;}
+</style>
+<g>
+	<circle class="st0" cx="144.9" cy="144.5" r="139"/>
+	<rect x="26.7" y="84.7" class="st1" width="70.7" height="85.2"/>
+	<text transform="matrix(0 -1 1 0 79.6274 169.9648)" class="st2 st3 st4">A</text>
+	
+		<rect x="210.8" y="120" transform="matrix(3.572514e-03 -1 1 3.572514e-03 91.9561 396.9247)" class="st1" width="68.7" height="64.6"/>
+	<text transform="matrix(1 0 0 1 212.9316 169.4912)" class="st2 st5 st6">D</text>
+	<path class="st2" d="M212.8,163.1v5.2c0,1-0.8,1.8-1.8,1.8H88c-1,0-1.8-0.8-1.8-1.8v-5.2c0-1,0.8-1.8,1.8-1.8h123
+		C212,161.3,212.8,162.1,212.8,163.1z"/>
+	<path class="st2" d="M212.8,120.4v5.2c0,1-0.8,1.8-1.8,1.8H88c-1,0-1.8-0.8-1.8-1.8v-5.2c0-1,0.8-1.8,1.8-1.8h123
+		C212,118.5,212.8,119.4,212.8,120.4z"/>
+	<path class="st7" d="M212.8,142.1v5.2c0,1-0.8,1.8-1.8,1.8H88c-1,0-1.8-0.8-1.8-1.8v-5.2c0-1,0.8-1.8,1.8-1.8h123
+		C212,140.2,212.8,141.1,212.8,142.1z"/>
+	<rect x="119.6" y="25.8" class="st1" width="85.2" height="70.7"/>
+	<text transform="matrix(1 0 0 1 119.6147 78.7358)" class="st8 st3 st4">A</text>
+	<rect x="102.8" y="211.9" class="st1" width="68.7" height="57.3"/>
+	<text transform="matrix(0 1 -1 0 119.9087 211.9316)" class="st8 st5 st6">D</text>
+	<rect x="120.8" y="81.9" class="st9" width="45.8" height="129.3"/>
+	<path class="st8" d="M126.5,211.9h-5.2c-1,0-1.8-0.8-1.8-1.8v-123c0-1,0.8-1.8,1.8-1.8h5.2c1,0,1.8,0.8,1.8,1.8v123
+		C128.3,211.1,127.5,211.9,126.5,211.9z"/>
+	<path class="st8" d="M169.2,212H164c-1,0-1.8-0.8-1.8-1.8v-123c0-1,0.8-1.8,1.8-1.8h5.2c1,0,1.8,0.8,1.8,1.8v123
+		C171,211.1,170.2,212,169.2,212z"/>
+	<path class="st10" d="M147.5,211.9h-5.2c-1,0-1.8-0.8-1.8-1.8v-123c0-1,0.8-1.8,1.8-1.8h5.2c1,0,1.8,0.8,1.8,1.8v123
+		C149.3,211.1,148.5,211.9,147.5,211.9z"/>
+</g>
+</svg>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
+
+/****************** Mobile Version ********************/
+nav, main {
+  display: none;
+}
+
+body {
+  margin: auto;
+  font-family: "Muli";
+  background-color: #b8cff1;
+}
+
+h1, h2, h3, p{
+  color: #fff;
+}
+
+/* Logo header */
+
+#top1, #top2, #mobileIntro {
+  width: 100%;
+}
+
+#top1, #top2{
+  margin: 0;
+  padding: 1.5em;
+  width: 100%;
+}
+
+#top1{
+  background-color: #164c73;
+}
+
+#top2{
+  background-color: #88abe9;
+  padding-bottom: 0;
+}
+
+#mobileFlex{
+  display: flex;
+}
+
+#mobileLogo{
+  margin: 1em;
+}
+
+h1{
+  margin-top: 1.5em;
+  font-family: "Quicksand";
+  font-size: 45px;
+}
+
+/* Introduction */
+
+#mobileIntro{
+  width: 110%;
+  background-color: #8eb1de;
+  padding: 0.25em;
+}
+
+#mobileIntro section{
+  display: flex;
+}
+
+h2{
+  font-size: 20px;
+  padding-left: 1em;
+}
+
+h3{
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0.1em 0 0.75em 0.1em;
+}
+
+#location{
+  margin-left: -0.25em;
+  width: 110%;
+  border-bottom: 20px solid #b8cff1;
+}
+
+#location img{
+  margin-left: 1.25em;
+}
+
+
+/* ------ */
+div {
+  padding: 7em;
+  width: 20%;
+  background-color: #c2d3ef;
+  margin: 1em;
+}
