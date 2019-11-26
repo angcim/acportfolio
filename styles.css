@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
 
 /****************** Mobile Version ********************/
-nav, main, #mobileProjects, #mobileAbout, #mobileConnect {
+nav, main, #mobileAbout, #mobileConnect, #mobileContact {
   display: none;
 }
 
@@ -31,6 +31,7 @@ h1, h2, h3, p{
 }
 
 h1{
+  width: 10%;
   margin-top: 1.5em;
   font-family: "Quicksand";
   font-size: 36px;
@@ -94,8 +95,8 @@ padding-left: 2.3em;
 }
 
 
-#navIcons, #portraitLink, #connectLink, #contactLink{
-    padding-left: 5.1em;
+#projectLink, #portraitLink, #connectLink, #contactLink{
+    padding-left: 5em;
 }
 
 #leftArrow, #rightArrow, #leftArrow2, #rightArrow2, #leftArrow3, #rightArrow3, #leftArrow4, #rightArrow4{
