@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
 
 /****************** Mobile Version ********************/
-nav, main {
+nav, main, #mobileProjects, #mobileAbout, #mobileConnect {
   display: none;
 }
 
@@ -15,21 +15,15 @@ h1, h2, h3, p{
   color: #fff;
 }
 
+#mobileFlex, #mobileIntro section{
+  display: flex;
+}
+
 /* Logo header */
 
-#top1{
-  width: 100%;
-  background-color: #164c73;
-  padding-bottom: 3em;
-}
-
-#top2{
+#top{
   background-color: #88abe9;
-  padding-bottom: 1em;
-}
-
-#mobileFlex{
-  display: flex;
+  padding-bottom: 0.75em;
 }
 
 #mobileLogo{
@@ -48,10 +42,6 @@ h1{
 #mobileIntro{
   background-color: #8eb1de;
   padding: 0.25em;
-}
-
-#mobileIntro section{
-  display: flex;
 }
 
 h2{
@@ -86,16 +76,51 @@ a{
   color: #aaebf2;
 }
 
-#mobileLinks h2{
+#mobileProjects h2, #mobileAbout h2, #mobileConnect h2, #mobileContact h2{
   font-size:40px;
-  padding-left: 2.4em;
   margin-bottom: 0.5em;
 }
 
-#mobileLinks img{
-    padding-left: 5.6em;
+#mobileProjects h2{
+  padding-left: 2.25em;
 }
 
+#mobileAbout h2{
+  padding-left: 2em;
+}
+
+#mobileConnect h2,#mobileContact h2{
+padding-left: 2.3em;
+}
+
+
+#navIcons, #portraitLink, #connectLink, #contactLink{
+    padding-left: 5.1em;
+}
+
+#leftArrow, #rightArrow, #leftArrow2, #rightArrow2, #leftArrow3, #rightArrow3, #leftArrow4, #rightArrow4{
+  position: fixed;
+  bottom: 4.3em;
+}
+
+#leftArrow, #leftArrow2, #leftArrow3, #leftArrow4 {
+  left: 1em;
+}
+
+#rightArrow, #rightArrow2, #rightArrow3, #rightArrow4{
+  right: -4em;
+}
+
+footer{
+  background-color: #f3f3f3;
+  padding: 0.05em;
+  margin-top: 0.75em
+}
+
+footer p{
+  color: #595959;
+  text-align: center;
+}
 /* ------ */
 /* div {
   padding: 7em;
