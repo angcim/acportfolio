@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
 
 /****************** Mobile Version ********************/
-nav, main, #mobileAbout, #mobileConnect, #mobileContact {
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink {
   display: none;
 }
 
@@ -54,7 +54,7 @@ h2{
 h3{
   font-weight: 300;
   font-size: 17px;
-  margin: -0.45em 0 0.75em 0.1em;
+  margin: -0.45em 0 0.75em 0.2em;
 }
 
 #location{
@@ -77,25 +77,25 @@ a{
   color: #aaebf2;
 }
 
-#mobileProjects h2, #mobileAbout h2, #mobileConnect h2, #mobileContact h2{
+#mobileProjectsLink h2, #mobileAboutLink h2, #mobileConnectLink h2, #mobileContactLink h2{
   font-size:40px;
   margin-bottom: 0.5em;
 }
 
-#mobileProjects h2{
+#mobileProjectsLink h2{
   padding-left: 2.25em;
 }
 
-#mobileAbout h2{
+#mobileAboutLink h2{
   padding-left: 2em;
 }
 
-#mobileConnect h2,#mobileContact h2{
+#mobileConnectLink h2,#mobileContactLink h2{
 padding-left: 2.3em;
 }
 
 
-#projectLink, #portraitLink, #connectLink, #contactLink{
+#projectIcon, #portraitIcon, #connectIcon, #contactIcon{
     padding-left: 5em;
 }
 
@@ -109,7 +109,7 @@ padding-left: 2.3em;
 }
 
 #rightArrow, #rightArrow2, #rightArrow3, #rightArrow4{
-  right: -4em;
+  right: 1em;
 }
 
 footer{
