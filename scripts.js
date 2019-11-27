@@ -24,7 +24,7 @@ var leftArrow4 = document.querySelector('#leftArrow4');
 var rightArrow4 = document.querySelector('#rightArrow4');
 
 
-// RIGHT ARROWS
+// HOME PAGE RIGHT ARROWS
 rightArrow.addEventListener('click', function() {
   document.querySelector('#mobileProjectsLink').style.display = 'none';
   document.querySelector('#mobileAboutLink').style.display = 'block';
@@ -45,7 +45,7 @@ rightArrow4.addEventListener('click', function() {
   document.querySelector('#mobileProjectsLink').style.display = 'block';
 });
 
-// LEFT ARROWS
+// HOME PAGE LEFT ARROWS
 leftArrow.addEventListener('click', function() {
   document.querySelector('#mobileProjectsLink').style.display = 'none';
   document.querySelector('#mobileContactLink').style.display = 'block';
@@ -64,4 +64,16 @@ leftArrow3.addEventListener('click', function() {
 leftArrow4.addEventListener('click', function() {
   document.querySelector('#mobileContactLink').style.display = 'none';
   document.querySelector('#mobileConnectLink').style.display = 'block';
+});
+
+// ABOUT ME RIGHT ARROWS
+
+// ABOUT ME LEFT ARROWS
+
+
+// ABOUT ME
+aboutIcon.addEventListener('click', function() {
+  document.querySelector('#mobileHomepage').style.display = 'none';
+  document.querySelector('#mobileAboutMe').style.display = 'block';
+  document.querySelector('body').style.backgroundColor = '#f1bbc9';
 });

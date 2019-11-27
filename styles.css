@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
 
-/****************** Mobile Version ********************/
-nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink {
+/****************************** MOBILE VERSION ******************************/
+
+/********************* HOME PAGE *********************/
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe /*#mobileHomepage*/{
   display: none;
 }
 
@@ -15,22 +17,36 @@ h1, h2, h3, p{
   color: #fff;
 }
 
-#mobileFlex, #mobileIntro section{
+.mobileFlex, #mobileIntro section{
   display: flex;
 }
 
-/* Logo header */
-
-#top{
-  background-color: #88abe9;
+#top, #top2{
   padding-bottom: 0.75em;
 }
 
-#mobileLogo{
+#mobileIntro p, #mobileWorkInfo p{
+line-height: 1.25em;
+}
+
+#mobileAboutMe h2, footer p{
+  text-align: center;
+}
+
+#mobileHomepage h2, #mobileIntro p, #leftArrow, #leftArrow2, #leftArrow3, #leftArrow4{
+  padding-left: 1em;
+  }
+
+/****** TOP LOGO HEADER ******/
+#top{
+  background-color: #88abe9;
+}
+
+#mobileLogo, #mobileAboutLogo{
   margin: 1em 0.8em 1em 0.8em;
 }
 
-h1{
+header h1{
   width: 10%;
   margin-top: 1.5em;
   font-family: "Quicksand";
@@ -38,20 +54,14 @@ h1{
   padding-right: 0.5em;
 }
 
-/* Introduction */
-
-#mobileIntro{
-  background-color: #8eb1de;
-  padding: 0.25em;
-}
-
-h2{
+/****** CURRENT JOB ******/
+#mobileHomepage h2{
   font-size: 18.5px;
-  padding-left: 1em;
   margin-top: 0.5em;
 }
 
-h3{
+/****** LOCATION ******/
+#mobileHomepage h3{
   font-weight: 300;
   font-size: 17px;
   margin: -0.45em 0 0.75em 0.2em;
@@ -67,51 +77,95 @@ h3{
   margin: -0.5em 0 0 1.25em;
 }
 
-#mobileIntro p{
-  padding-left: 1em;
-  line-height: 1.4em;
+/****** BRIEF INTRO ******/
+#mobileIntro{
+  background-color: #8eb1de;
+  padding: 0.25em;
 }
 
+/****** INTERACTIVE PORTFOLIO LINK ******/
 a{
   text-decoration: none;
   color: #aaebf2;
 }
 
+/****** NAVIGATION ICON HEADINGS ******/
 #mobileProjectsLink h2, #mobileAboutLink h2, #mobileConnectLink h2, #mobileContactLink h2{
   font-size:40px;
   margin-bottom: 0.5em;
 }
 
 #mobileProjectsLink h2{
-  padding-left: 2.25em;
+  padding-left: 2.2em;
 }
 
 #mobileAboutLink h2{
-  padding-left: 2em;
+  padding-left: 1.9em;
 }
 
 #mobileConnectLink h2,#mobileContactLink h2{
-padding-left: 2.3em;
+padding-left: 2.1em;
 }
 
-
+/****** NAVIGATION ICONS PLACEMENT ******/
 #projectIcon, #portraitIcon, #connectIcon, #contactIcon{
-    padding-left: 5em;
+    padding: 0 0.5em 0 0.5em;
 }
 
+/****** HOME PAGE ARROWS ******/
 #leftArrow, #rightArrow, #leftArrow2, #rightArrow2, #leftArrow3, #rightArrow3, #leftArrow4, #rightArrow4{
-  position: fixed;
-  bottom: 4.3em;
+  padding-bottom: 4.5em;
 }
 
-#leftArrow, #leftArrow2, #leftArrow3, #leftArrow4 {
-  left: 1em;
+/********************* ABOUT ME *********************/
+#top2{
+  background-color: #ee89a7;
 }
 
-#rightArrow, #rightArrow2, #rightArrow3, #rightArrow4{
-  right: 1em;
+#mobileAboutMe {
+  background-color: #f1bbc9;
 }
 
+#mobileAboutMe header section{
+  background-color: #f2aac2;
+}
+
+#mobileWorkInfo{
+  background-color: #e19aaf;
+}
+
+#mobileAboutMe h1{
+  margin-top: 0.9em;
+  font-size: 27px;
+}
+
+#mobileAboutMe h2{
+  margin-left: 0.25em;
+  font-size:25px;
+}
+
+#mobileIllustratedPortrait{
+  padding: 0 0.75em 0 0.75em;
+}
+
+#mobileWorkInfo{
+padding: 0.5em 1.25em 0.5em 1.25em;
+}
+
+#mobileWork {
+  padding-bottom: 1em;
+}
+
+#aboutLeftArrow, #aboutRightArrow{
+  padding-bottom: 4em;
+}
+
+
+#aboutLeftArrow{
+  padding-left: 0.75em;
+}
+
+/********************* FOOTER *********************/
 footer{
   background-color: #f3f3f3;
   padding: 0.05em;
@@ -120,7 +174,6 @@ footer{
 
 footer p{
   color: #595959;
-  text-align: center;
 }
 /* ------ */
 /* div {
