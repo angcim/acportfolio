@@ -3,7 +3,7 @@
 /****************************** MOBILE VERSION ******************************/
 
 /********************* HOME PAGE *********************/
-nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe /*#mobileHomepage*/{
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, /*#mobileHomepage*/ #mobileGetToKnowMe{
   display: none;
 }
 
@@ -130,7 +130,7 @@ padding-left: 2.1em;
   background-color: #f2aac2;
 }
 
-#mobileWorkInfo{
+#mobileWorkInfo, #mobileMeInfo{
   background-color: #e19aaf;
 }
 
@@ -144,24 +144,24 @@ padding-left: 2.1em;
   font-size:25px;
 }
 
-#mobileIllustratedPortrait{
+#mobileIllustratedPortrait, #mobilePortrait{
   padding: 0 0.75em 0 0.75em;
 }
 
-#mobileWorkInfo{
+#mobileWorkInfo, #mobileMeInfo{
 padding: 0.5em 1.25em 0.5em 1.25em;
 }
 
-#mobileWork {
+#mobileWork, #mobileMe {
   padding-bottom: 1em;
 }
 
-#aboutLeftArrow, #aboutRightArrow{
+#aboutLeftArrow, #aboutRightArrow, #aboutLeftArrow2, #aboutRightArrow2{
   padding-bottom: 4em;
 }
 
 
-#aboutLeftArrow{
+#aboutLeftArrow, #aboutLeftArrow2{
   padding-left: 0.75em;
 }
 
