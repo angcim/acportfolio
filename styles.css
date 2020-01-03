@@ -3,49 +3,66 @@
 /****************************** MOBILE VERSION ******************************/
 
 /********************* HOME PAGE *********************/
-nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, /*#mobileHomepage*/ #mobileGetToKnowMe{
+/* All of the mobile pages hidden except for homepage */
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, /*#mobileHomepage*/ #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact{
   display: none;
 }
 
+/* font size of the header in Project, About Me, Connect, and Contact */
+#mobileAboutMe h1, #mobileConnect h1, #mobileContact h1{
+  margin-top: 0.9em;
+  font-size: 27px;
+}
+
+/* Homepage typeface and background color */
 body {
   margin: auto;
   font-family: "Muli";
   background-color: #b8cff1;
 }
 
+/* all of the text color */
 h1, h2, h3, p{
   color: #fff;
 }
 
+/* Flexbox between the logo and Angelika Designs */
 .mobileFlex, #mobileIntro section{
   display: flex;
 }
 
-#top, #top2{
+/* dark thin line padding on top of all headers */
+#top, #top2, #top3, #top4{
   padding-bottom: 0.75em;
 }
 
-#mobileIntro p, #mobileWorkInfo p{
+/* line height of all the info text in all the pages */
+#mobileIntro p, #mobileWorkInfo p, #mobileConnectInfo{
 line-height: 1.25em;
 }
 
+/* Text and elements thar are aligned center */
 #mobileAboutMe h2, footer p{
   text-align: center;
 }
 
+/* All of the spacing and padding for the Arrows */
 #mobileHomepage h2, #mobileIntro p, #leftArrow, #leftArrow2, #leftArrow3, #leftArrow4{
   padding-left: 1em;
   }
 
 /****** TOP LOGO HEADER ******/
+/* color of the dark thin line on the top */
 #top{
   background-color: #88abe9;
 }
 
-#mobileLogo, #mobileAboutLogo{
+/* Margins between the logos and the header */
+#mobileLogo, .mobileLogo{
   margin: 1em 0.8em 1em 0.8em;
 }
 
+/* The header styles for the homepage */
 header h1{
   width: 10%;
   margin-top: 1.5em;
@@ -67,12 +84,14 @@ header h1{
   margin: -0.45em 0 0.75em 0.2em;
 }
 
+/* spacing on the location section */
 #location{
   margin-left: -0.25em;
   width: 102.25%;
   border-bottom: 20px solid #b8cff1;
 }
 
+/* spacing on the location icon */
 #location img{
   margin: -0.5em 0 0 1.25em;
 }
@@ -89,7 +108,8 @@ a{
   color: #aaebf2;
 }
 
-/****** NAVIGATION ICON HEADINGS ******/
+/****** NAVIGATION ICONS ******/
+/* Headings for the Navigation Icons font size and spacing */
 #mobileProjectsLink h2, #mobileAboutLink h2, #mobileConnectLink h2, #mobileContactLink h2{
   font-size:40px;
   margin-bottom: 0.5em;
@@ -118,6 +138,7 @@ padding-left: 2.1em;
 }
 
 /********************* ABOUT ME *********************/
+/* header and background color */
 #top2{
   background-color: #ee89a7;
 }
@@ -130,41 +151,156 @@ padding-left: 2.1em;
   background-color: #f2aac2;
 }
 
-#mobileWorkInfo, #mobileMeInfo{
+#mobileWorkInfo, #mobileMeInfo, #mobileIntPortInfo{
   background-color: #e19aaf;
 }
 
-#mobileAboutMe h1{
-  margin-top: 0.9em;
-  font-size: 27px;
-}
 
 #mobileAboutMe h2{
   margin-left: 0.25em;
   font-size:25px;
 }
 
-#mobileIllustratedPortrait, #mobilePortrait{
+#mobileIllustratedPortrait, #mobilePortrait, #adLogo{
   padding: 0 0.75em 0 0.75em;
 }
 
-#mobileWorkInfo, #mobileMeInfo{
+#mobileWorkInfo, #mobileMeInfo, #mobileIntPortInfo{
 padding: 0.5em 1.25em 0.5em 1.25em;
 }
 
-#mobileWork, #mobileMe {
+#mobileWork, #mobileMe, #mobileIntPortLink {
   padding-bottom: 1em;
 }
 
-#aboutLeftArrow, #aboutRightArrow, #aboutLeftArrow2, #aboutRightArrow2{
+#aboutLeftArrow, #aboutRightArrow, #aboutLeftArrow2, #aboutRightArrow2, #aboutLeftArrow3, #aboutRightArrow3{
   padding-bottom: 4em;
 }
 
 
-#aboutLeftArrow, #aboutLeftArrow2{
+#aboutLeftArrow, #aboutLeftArrow2, #aboutLeftArrow3{
   padding-left: 0.75em;
 }
 
+/********************* CONNECT PAGE *********************/
+/* Mobile Connect Colors */
+#top3{
+  background-color: #31aa93;
+}
+
+#mobileConnect header section{
+  background-color: #94ead9;
+}
+
+#mobileConnect {
+  background-color: #d3f4ed;
+}
+
+/* Space around the mobile connect information section */
+#mobileConnectInfo h2{
+  padding: 0.75em 0 0.5em 0.5em;
+  font-size: 30px;
+}
+
+#mobileConnectInfo p{
+  padding: 0 1em 1em 1em;
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-top: -1.25em;
+}
+
+
+/* Flexbox between insta, linkedin, behance, and dribbble */
+.connectFlex{
+  display:flex;
+}
+
+/* Space between the connect icons */
+.mobileConnectIcons{
+  padding: 0 0 1em 1.25em;
+}
+
+.mobileConnectIcons img{
+  margin-top: -0.65em;
+}
+
+#mobileConnect h3{
+  padding-left: 0.5em;
+  font-size: 23px;
+}
+
+#mobileConnect section{
+  background-color: #7ae2cf;
+}
+
+/* CONTACT */
+
+#top4{
+  background-color: #bc5e3c;
+}
+
+#mobileContact header section{
+  background-color: #fa8d62;
+}
+
+#mobileContact {
+  background-color: #ffbca4;
+}
+
+#mobileContact section, #mobileContact form{
+  background-color: #f2774c;
+}
+
+#mobileContactInfo,  form{
+    margin-top: 1em;
+}
+
+#mobileContact section{
+  padding: 0.25em 0.5em 0.25em 1em;
+}
+
+#mobileContact h3{
+  font-size: 30px;
+  padding:0;
+}
+
+ form{
+  padding: 1em;
+}
+label{
+  color: #fff;
+}
+
+input[type="text"], input[type="email"]{
+  margin-bottom: 0.75em;
+  margin-left: 0.5em;
+}
+
+#userEmail{
+  margin-left: 2.5em;
+}
+
+#userSubject{
+  margin-left: 1.6em;
+}
+
+#userMessage{
+  margin: 0.5em 0 0.5em 0.5em;
+}
+
+button{
+  padding: 0.5em;
+  border: none;
+  color: #fff;
+}
+
+#send{
+  background-color: #f2b85a;
+}
+
+#reset {
+  background-color: #f79f84;
+}
 /********************* FOOTER *********************/
 footer{
   background-color: #f3f3f3;
