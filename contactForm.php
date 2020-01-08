@@ -2,7 +2,7 @@
 
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
-$subject = $_POST['text'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
 
 $email_from = 'angcim.designs@gmail.com';
@@ -20,6 +20,4 @@ $headers .= "Reply-To: $visitor_email \r\n";
 
 mail($to,$email_body,$headers);
 
-header("Location: Angelika Designs");
-
-?>
+header("Location: Angelika Designs");?>
