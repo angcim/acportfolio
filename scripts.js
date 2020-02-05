@@ -117,8 +117,14 @@ portofolioLeftArrow.addEventListener('click', function() {
 });
 
 
-
 // MOBILE HEADER COLOR CHANGE
+//ABOUT ME HEADER: PURPLE > BLUE
+projectIcon.addEventListener('click', function() {
+  document.querySelector('#mobileHomepage').style.display = 'none';
+  document.querySelector('#mobileProjects').style.display = 'block';
+  document.querySelector('body').style.backgroundColor = '#9fd9ed';
+});
+
 //ABOUT ME HEADER: PURPLE > PINK
 aboutIcon.addEventListener('click', function() {
   document.querySelector('#mobileHomepage').style.display = 'none';
@@ -126,16 +132,16 @@ aboutIcon.addEventListener('click', function() {
   document.querySelector('body').style.backgroundColor = '#f1bbc9';
 });
 
-//CONNECT HEADER: PURPLE > PINK
+//CONNECT HEADER: PURPLE > GREEN
 connectIcon.addEventListener('click', function() {
   document.querySelector('#mobileHomepage').style.display = 'none';
   document.querySelector('#mobileConnect').style.display = 'block';
   document.querySelector('body').style.backgroundColor = '#d3f4ed';
 });
 
-//CONTACT HEADER: PURPLE > PINK
-contactIcon.addEventListener('click', function() {
-  document.querySelector('#mobileHomepage').style.display = 'none';
-  document.querySelector('#mobileContact').style.display = 'block';
-  document.querySelector('body').style.backgroundColor = '#ffbca4';
-});
+// HIDDEN CONTACT HEADER: PURPLE > PINK
+// contactIcon.addEventListener('click', function() {
+//   document.querySelector('#mobileHomepage').style.display = 'none';
+//   document.querySelector('#mobileContact').style.display = 'block';
+//   document.querySelector('body').style.backgroundColor = '#ffbca4';
+// });

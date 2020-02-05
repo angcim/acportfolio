@@ -4,12 +4,12 @@
 
 /********************* HOME PAGE *********************/
 /* All of the mobile pages hidden except for homepage */
-nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, /*#mobileHomepage*/ #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact{
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, /*#mobileHomepage*/ #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact, #mobileProjects{
   display: none;
 }
 
 /* font size of the header in Project, About Me, Connect, and Contact */
-#mobileAboutMe h1, #mobileConnect h1, #mobileContact h1{
+#mobileAboutMe h1, #mobileConnect h1, #mobileContact h1, #mobileProjects h1{
   margin-top: 0.9em;
   font-size: 27px;
 }
@@ -32,7 +32,7 @@ h1, h2, h3, p{
 }
 
 /* dark thin line padding on top of all headers */
-#top, #top2, #top3, #top4{
+#top, #top1, #top2, #top3, #top4{
   padding-bottom: 0.75em;
 }
 
@@ -136,6 +136,63 @@ padding-left: 2.1em;
 #leftArrow, #rightArrow, #leftArrow2, #rightArrow2, #leftArrow3, #rightArrow3, #leftArrow4, #rightArrow4{
   padding-bottom: 4.5em;
 }
+
+/********************* PROJECTS *********************/
+/* header and background color */
+#top1{
+  background-color: #164c73;
+}
+
+#mobileProjects {
+  background-color: #9fd9ed;
+}
+
+#mobileProjects header section{
+  background-color: #72bada;
+}
+
+#mobileRecentWork h3, #mobileOtherWork h3{
+  background-color: #52a8c6;
+  font-size: 25px;
+  padding: 0.75em;
+}
+
+#mobileOtherWork h3{
+  margin-top:-1.6em;
+}
+
+#mobileRecentWork img{
+  padding: 4.1%;
+  padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #daf1f7;
+    margin-top: -1.6em;
+}
+
+#mobileRecentWork h4{
+  font-size: 30px;
+  color: #FFF;
+  background: linear-gradient(#e8f6f9,#52a8c6);
+  padding: 0.5em;
+opacity: 0.7;
+  margin-top: -2.245em;
+}
+
+.mobileWorkImg{
+  margin-left: 1.2em;
+}
+
+#mobileOtherWork h4{
+  font-size: 25px;
+  color: #FFF;
+  background: linear-gradient(#e8f6f9,#52a8c6);
+  padding: 0.5em;
+opacity: 0.7;
+  margin-top: -2.245em;
+  margin-left: .75em;
+  width: 295px;
+}
+
 
 /********************* ABOUT ME *********************/
 /* header and background color */
