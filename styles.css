@@ -141,6 +141,7 @@ padding-left: 2.1em;
 /* header and background color */
 #top1{
   background-color: #164c73;
+  width:110.5%;
 }
 
 #mobileProjects {
@@ -149,16 +150,19 @@ padding-left: 2.1em;
 
 #mobileProjects header section{
   background-color: #72bada;
+  width:110.5%;
 }
 
 #mobileRecentWork h3, #mobileOtherWork h3{
   background-color: #52a8c6;
   font-size: 25px;
   padding: 0.75em;
+  width:100%;
 }
 
 #mobileOtherWork h3{
   margin-top:-1.6em;
+  width:100%;
 }
 
 #mobileRecentWork img{
@@ -167,6 +171,7 @@ padding-left: 2.1em;
     padding-bottom: 3em;
     background-color: #daf1f7;
     margin-top: -1.6em;
+    width:102.3%;
 }
 
 #mobileRecentWork h4{
@@ -176,6 +181,7 @@ padding-left: 2.1em;
   padding: 0.5em;
 opacity: 0.7;
   margin-top: -2.245em;
+  width:102.25%;
 }
 
 .mobileWorkImg{
@@ -370,10 +376,9 @@ footer{
 footer p{
   color: #595959;
 }
-/* ------ */
-/* div {
-  padding: 7em;
-  width: 20%;
-  background-color: #c2d3ef;
-  margin: 1em;
-} */
+
+/****************************** TABLET VERSION ******************************/
+@media only screen and (min-width: 600px) {
+
+
+}
