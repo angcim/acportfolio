@@ -6,58 +6,242 @@
   <meta charset="utf-8">
   <title>Angelika's Portfolio</title>
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
- <link href="styles1.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body id="projectsPage">
 
+  <!-- **************************************** MOBILE DESIGN **************************************** -->
+  <!-- ************* MOBILE HOMEPAGE ************* -->
+  <article id="mobileHomepage">
+    <!-- Main header of the homepage -->
+    <header>
+      <div id="topHeader"></div> <!-- in tablets -->
+      <div id="top"></div> <!-- thin dark line on the top of the header -->
+      <a href="index.html">
+        <section class="mobileFlex">
+          <!-- flexbox on main homepage logo and header -->
+          <img src="images/mobileLogo.png" width="160" height="160" alt="Angelika Designs" id="mobileLogo">
+          <h1>ANGELIKA <br>DESIGNS</h1>
+        </section>
+      </a>
+      <!-- **************************************** TABLET NAVIGATION **************************************** -->
+      <nav id="tabletNav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="connect.html">CONNECT</a></li>
+          <li><a href="mailto:&#097;&#110;&#103;&#099;&#105;&#109;&#046;&#100;&#101;&#115;&#105;&#103;&#110;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+  </article>
 
-  <!-- Navigation -->
+  <!-- ************************* DESKTOP NAVIGATION ********************* -->
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Connect</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<article id="desktopheader">
+  <header id="desktopNav">
+      <ul>
+        <li><a href="index.html" id="home">HOME</a></li>
+        <li><a href="about.html" id="about">ABOUT</a></li>
+        <li><a href="projects.html" id="project">PROJECTS</a></li>
+        <li><a href="connect.html" id="connect">CONNECT</a></li>
+        <li><a href="mailto:&#097;&#110;&#103;&#101;&#108;&#105;&#107;&#097;&#099;&#105;&#109;&#101;&#110;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" id="contact">CONTACT</a></li>
+      </ul>
+</header>
+<div id="hoverLink"></div>
+<section id="desktopBio">
+  <div id="bioColor"></div>
+<img src="images/mobile/mobileIcons/projectsIcon.png" alt="Angelika Cimene" width="300" height="300" id="desktopLogo">
 
-  <!-- Home Page-->
+<section id="desktopAboutLinks">
+  <ul>
+<li id="all">ALL</li>
+<li id="uiux">UI/UX</li>
+<li id="web">WEBSITE DESIGN</li>
+<li id="graphic">GRAPHIC DESIGN</li>
+<li id="anim">ANIMATION/li>
+  </ul>
+</section>
+</section>
 
-  <main>
+</article>
 
-    <section>
-      <img src="images/logo.svg" width="350" height="350" alt="Angelika Designs" id="desktopLogo">
+  <!-- ************* MOBILE PROJECTS ************* -->
+  <article id="mobileProjects">
+    <!-- About Me header -->
+    <header>
+      <div id="top1"></div> <!-- dark color on top of mobile design -->
+      <a href="index.html">
+        <section class="mobileFlex">
+          <!-- flexbox between the logo and name -->
+          <img src="images/mobileLogo.png" width="75" height="75" alt="Angelika Designs" class="mobileLogo">
+          <h1>ANGELIKA <br>DESIGNS</h1>
+        </section>
+      </a>
+    </header>
 
-      <h1>Graphic Designer at Spotlight Education</h1>
-      <img src="images/tempIcon.svg" width="50" height="50" alt="Location Icon">
-      <h2>Orlando, Florida</h2>
-
-      <p>Hello there and welcome to my <br> portfolio. I’m Angelika Cimene. <br> I have a passion for graphic and <br> web design. Feel free to explore <br> my work.</p>
-
-      <p><a href="#">Click here</a> to go to my Interactive <br> Portfolio</p>
+<!-- Featured Work -->
+    <section id="mobileRecentWork">
+      <h3>FEATURED PROJECT</h3>
+      <img src="images/projectIcons/evexplorer.png" alt="work" width="330" height="202">
+      <h4>EV EXPLORER</h4>
     </section>
 
-    <section id="Recent">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+<!-- All Projects -->
+    <section id="mobileOtherWork">
+      <h3>ALL PROJECTS</h3>
+      <section>
+        <a href="projects/webdesign.html"><img src="images/projectIcons/spotlightwebpage.png" alt="Spotlight Web Page" width="320" height="320" class="mobileWorkImg">
+        <h4>SPOTLIGHT WEB PAGE</h4></a>
+
+        <a href="#"><img src="images/projectIcons/ccrg-infographic.png" alt="CCRG Infographic Report" width="320" height="320" class="mobileWorkImg">
+        <h4>CCRG INFOGRAPHIC</h4></a>
+
+        <a href="#"><img src="images/projectIcons/wved.png" alt="West Village Energy Dashboard" width="320" height="320" class="mobileWorkImg">
+        <h4>WVED</h4></a>
+
+        <a href="#"><img src="images/projectIcons/critica.png" alt="Critica Portfolio Review" width="320" height="320" class="mobileWorkImg">
+        <h4>CRITICA PROTOTYPE</h4></a>
+
+        <a href="#"><img src="images/projectIcons/cnh-web.png" alt="Cycle News Hours Website" width="320" height="320" class="mobileWorkImg">
+        <h4>CNH WEBSITE</h4></a>
+
+        <a href="#"><img src="images/projectIcons/signage.png" alt="California Hall Signage" width="320" height="320" class="mobileWorkImg">
+        <h4>INDULDGE IN ABUNDANCE</h4></a>
+
+        <a href="#"><img src="images/projectIcons/neweragarden.png" alt="New Era Garden Prototype" width="320" height="320" class="mobileWorkImg">
+        <h4>NEW ERA GARDEN</h4></a>
+
+        <a href="#"><img src="images/projectIcons/mixd.png" alt="MIX'D Trail Mix" width="320" height="320" class="mobileWorkImg">
+        <h4>MIX'D</h4></a>
+
+        <a href="#"><img src="images/projectIcons/healthybud.png" alt="Healthy Buddy" width="320" height="320" class="mobileWorkImg">
+        <h4>HEALTHY BUDDY</h4></a>
+
+        <a href="#"><img src="images/projectIcons/alfred-poster.jpg" alt="Alfred Hitchcock Poster" width="320" height="320" class="mobileWorkImg">
+        <h4>ALFRED HITCHCOCK POSTER</h4></a>
+
+        <a href="#"><img src="images/projectIcons/af-video.jpg" alt="Alfred Hitchcock Biography Animation" width="320" height="320" class="mobileWorkImg">
+        <h4>ALFRED HITCHCOCK ANIMATION</h4></a>
+
+        <a href="#"><img src="images/projectIcons/book-layout.jpg" alt="Design and Play Instinct" width="320" height="320" class="mobileWorkImg">
+        <h4>DESIGN AND PLAY INSTINCT</h4></a>
+      </section>
     </section>
+  </article>
 
-  </main>
 
-  <!-- About Me-->
+  <!-- ************ PROJECTS PAGE (tablet + desktop) *********** -->
+  <section id="Projects">
 
-  <!--Projects-->
+    <!-- Featured Project -->
+    <article id="featured">
+      <section>
+        <h2>FEATURED PROJECTS</h2>
+        <a href="projects/evexplorer.html"><img src="images/projectIcons/evexplorer.png" alt="Featured Project"></a>
+      </section>
+      <section id="featuredText">
+        <a href="projects/evexplorer.html"><h3>EV Explorer</h3>
+        <p class='date'>APRIL 2019 - MARCH 2020</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p></a>
+      </section>
+    </article>
 
-  <!--Connect-->
 
-  <!--Contact-->
+    <!-- All Projects -->
+    <article id="allProjects">
+      <h2>PROJECTS</h2>
+      <section class="project-flex">
+        <section>
+          <a href="projects/webdesign.html"><img src="images/projectIcons/spotlightwebpage.png" alt="Spotlight Web Page" width="350" height="350">
+            <h3>SPOTLIGHT WEB PAGE</h3>
+          </a>
+        </section>
+        <section>
+          <a href="projects/ccrg-infographic.html"><img src="images/projectIcons/ccrg-infographic.png" alt="CCRG Infographic Report" width="350" height="350">
+            <h3>CCRG INFOGRAPHIC</h3>
+          </a>
+        </section>
+      </section>
+
+      <section class="project-flex">
+        <section>
+          <a href="projects/wved.html"><img src="images/projectIcons/wved.png" alt="West Village Energy Dashboard" width="350" height="350">
+            <h3>WVED</h3>
+          </a>
+        </section>
+        <section>
+          <a href="projects/critica.html"><img src="images/projectIcons/critica.png" alt="Critica Portfolio Review" width="350" height="350">
+            <h3>CRITICA</h3>
+          </a>
+        </section>
+      </section>
+
+      <section class="project-flex">
+        <section>
+          <a href="projects/cnhweb.html"><img src="images/projectIcons/cnh-web.png" alt="Cycle News Hour Website" width="350" height="350">
+            <h3>CNH WEBSITE</h3>
+          </a>
+        </section>
+        <section>
+          <a href="projects/induldge-in-abundance.html"><img src="images/projectIcons/signage.png" alt="Induldge in Abundance" width="350" height="350">
+            <h3 class="project-raise">INDULDGE IN ABUNDANCE</h3>
+          </a>
+        </section>
+      </section>
+
+      <section class="project-flex">
+        <section>
+          <a href="projects/new-era-garden.html"><img src="images/projectIcons/neweragarden.png" alt="New Era Garden" width="350" height="350">
+            <h3>NEW ERA GARDEN</h3>
+          </a>
+        </section>
+        <section>
+          <a href="projects/mixd.html"><img src="images/projectIcons/mixd.png" alt="MIX'D Trail Mix" width="350" height="350">
+            <h3>MIX'D</h3>
+          </a>
+        </section>
+      </section>
+
+      <section class="project-flex">
+        <section>
+          <a href="projects/healthybuddy.html"><img src="images/projectIcons/healthybud.png" alt="Healthy Buddy" width="350" height="350">
+            <h3>HEALTHY BUDDY</h3>
+          </a>
+        </section>
+        <section>
+          <a href="projects/poster.html"><img src="images/projectIcons/alfred-poster.jpg" alt="Alfred Hitchock Poster" width="350" height="350">
+            <h3 class="project-raise">ALFRED HITCHCOCK POSTER</h3>
+          </a>
+        </section>
+      </section>
+
+      <section class="project-flex">
+        <section>
+          <a href="projects/healthybuddy.html"><img src="images/projectIcons/af-video.jpg" alt="Alfred Hitchcock Animation" width="350" height="350">
+            <h3 class="project-raise">ALFRED HITCHCOCK ANIMATION</h3>
+          </a>
+        </section>
+        <section>
+          <a href="projects/book.html"><img src="images/projectIcons/book-layout.jpg" alt="Design and Play Instinct" width="350" height="350">
+            <h3 class="project-raise">DESIGN AND PLAY INSTINCT</h3>
+          </a>
+        </section>
+      </section>
+
+
+    </article>
+  </section>
+
+  <!-- ************ HOMEPAGE PROJECTS (tablet + desktop) *********** -->
+
+
+  <footer>
+    <p>&copy; Website Created by Angelika Cimene</p>
+  </footer>
 </body>
 
 </html>

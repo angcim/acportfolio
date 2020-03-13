@@ -34,7 +34,16 @@ var contactIcon = document.querySelector('#contactIcon');
 var leftArrow4 = document.querySelector('#leftArrow4');
 var rightArrow4 = document.querySelector('#rightArrow4');
 
-// ****************************** END OF MOBILE VARIABLES ******************************
+
+// ****************************** DESKTOP VARIABLES ******************************
+var homeLink = document.querySelector('#home');
+var aboutLink = document.querySelector('#about');
+var projectsLink = document.querySelector('#project');
+var connectLink = document.querySelector('#connect');
+var contactLink = document.querySelector('#contact');
+var hoverLink = document.querySelector('#hoverLink');
+
+// ****************************** END OF VARIABLES ******************************
 
 // ********** HOME PAGE RIGHT ARROWS **********
 rightArrow.addEventListener('click', function() {
@@ -78,64 +87,20 @@ leftArrow4.addEventListener('click', function() {
   document.querySelector('#mobileConnectLink').style.display = 'block';
 });
 
-// ********** ABOUT ME RIGHT ARROWS **********
-//WORK AND PASSION
-workRightArrow.addEventListener('click', function() {
-  document.querySelector('#mobileWorkPassion').style.display = 'none';
-  document.querySelector('#mobileGetToKnowMe').style.display = 'block';
-});
-
-//BRIEF BIOGRAPHY
-bioRightArrow.addEventListener('click', function() {
-  document.querySelector('#mobileGetToKnowMe').style.display = 'none';
-  document.querySelector('#mobileIntPortfolio').style.display = 'block';
-});
-
-//INTERACTIVE PORTFOLIO
-portfolioRightArrow.addEventListener('click', function() {
-  document.querySelector('#mobileIntPortfolio').style.display = 'none';
-  document.querySelector('#mobileWorkPassion').style.display = 'block';
-});
-
-// ********** ABOUT ME LEFT ARROWS **********
-//WORK AND PASSION
-workLeftArrow.addEventListener('click', function() {
-  document.querySelector('#mobileWorkPassion').style.display = 'none';
-  document.querySelector('#mobileIntPortfolio').style.display = 'block';
-});
-
-//BRIEF BIOGRAPHY
-bioLeftArrow.addEventListener('click', function() {
-  document.querySelector('#mobileGetToKnowMe').style.display = 'none';
-  document.querySelector('#mobileWorkPassion').style.display = 'block';
-});
-
-//INTERACTIVE PORTFOLIO
-portofolioLeftArrow.addEventListener('click', function() {
-  document.querySelector('#mobileIntPortfolio').style.display = 'none';
-  document.querySelector('#mobileGetToKnowMe').style.display = 'block';
-});
-
 
 // MOBILE HEADER COLOR CHANGE
 //ABOUT ME HEADER: PURPLE > BLUE
 projectIcon.addEventListener('click', function() {
-  document.querySelector('#mobileHomepage').style.display = 'none';
-  document.querySelector('#mobileProjects').style.display = 'block';
   document.querySelector('body').style.backgroundColor = '#9fd9ed';
 });
 
 //ABOUT ME HEADER: PURPLE > PINK
 aboutIcon.addEventListener('click', function() {
-  document.querySelector('#mobileHomepage').style.display = 'none';
-  document.querySelector('#mobileAboutMe').style.display = 'block';
   document.querySelector('body').style.backgroundColor = '#f1bbc9';
 });
 
 //CONNECT HEADER: PURPLE > GREEN
 connectIcon.addEventListener('click', function() {
-  document.querySelector('#mobileHomepage').style.display = 'none';
-  document.querySelector('#mobileConnect').style.display = 'block';
   document.querySelector('body').style.backgroundColor = '#d3f4ed';
 });
 
@@ -145,3 +110,57 @@ connectIcon.addEventListener('click', function() {
 //   document.querySelector('#mobileContact').style.display = 'block';
 //   document.querySelector('body').style.backgroundColor = '#ffbca4';
 // });
+
+
+// ********** DESKTOP HOVER LINKS **********
+// ABOUT LINK
+aboutLink.addEventListener('mouseover', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#e28fa8';
+  document.getElementById('home').style.backgroundColor = '#254c70';
+  document.getElementById('home').style.padding = '0.61em';
+});
+
+aboutLink.addEventListener('mouseout', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#8face5';
+    document.getElementById('home').style.backgroundColor = '#8face5';
+      document.getElementById('home').style.padding = '0.65em';
+})
+
+// PROJECT LINK
+projectsLink.addEventListener('mouseover', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#82bad8';
+  document.getElementById('home').style.backgroundColor = '#254c70';
+  document.getElementById('home').style.padding = '0.61em';
+});
+
+projectsLink.addEventListener('mouseout', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#8face5';
+    document.getElementById('home').style.backgroundColor = '#8face5';
+      document.getElementById('home').style.padding = '0.65em';
+})
+
+// CONNECT LINK
+connectLink.addEventListener('mouseover', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#4ac6b4';
+  document.getElementById('home').style.backgroundColor = '#254c70';
+  document.getElementById('home').style.padding = '0.61em';
+});
+
+connectLink.addEventListener('mouseout', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#8face5';
+    document.getElementById('home').style.backgroundColor = '#8face5';
+      document.getElementById('home').style.padding = '0.65em';
+})
+
+// CONTACT LINK
+contactLink.addEventListener('mouseover', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#fa8d62';
+  document.getElementById('home').style.backgroundColor = '#254c70';
+  document.getElementById('home').style.padding = '0.61em';
+});
+
+contactLink.addEventListener('mouseout', function() {
+  document.getElementById('hoverLink').style.backgroundColor = '#8face5';
+    document.getElementById('home').style.backgroundColor = '#8face5';
+      document.getElementById('home').style.padding = '0.65em';
+})

@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
 
 /****************************** MOBILE VERSION ******************************/
-
 /********************* HOME PAGE *********************/
 /* All of the mobile pages hidden except for homepage */
-nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, /*#mobileHomepage*/ #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact, #mobileProjects{
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact, #mobileProjects, #tabletNav, #tabletIntro, #Projects, #AboutPage, #aboutHeader #mobileHomepage, #aboutMePage, #projectsPage #mobileHomepage, #connectPage #mobileHomepage, #desktopAbout, #desktopheader {
   display: none;
 }
 
+#aboutHeader #mobileAboutMe, #projectsPage #mobileProjects, #connectPage #mobileConnect {
+  display: block;
+}
+
 /* font size of the header in Project, About Me, Connect, and Contact */
-#mobileAboutMe h1, #mobileConnect h1, #mobileContact h1, #mobileProjects h1{
+#mobileAboutMe h1, #mobileConnect h1, #mobileContact h1, #mobileProjects h1 {
   margin-top: 0.9em;
   font-size: 27px;
+}
+
+/* font sizes that applies to multiple */
+#mobileRecentWork h4, #mobileConnectInfo h2, #mobileContact h3, #connectIcons h3, #desktopNav a{
+  font-size: 30px;
 }
 
 /* Homepage typeface and background color */
@@ -21,49 +29,54 @@ body {
   background-color: #b8cff1;
 }
 
+#mobileHomepage {
+  padding-bottom: 4em;
+}
+
 /* all of the text color */
-h1, h2, h3, p{
+h1, h2, h3, p, #mobileRecentWork h4, label, #mobileOtherWork h4, button, #desktopNav a {
   color: #fff;
 }
 
 /* Flexbox between the logo and Angelika Designs */
-.mobileFlex, #mobileIntro section{
+/* Flexbox between insta, linkedin, behance, and dribbble */
+.mobileFlex, #mobileIntro section, .connectFlex {
   display: flex;
 }
 
 /* dark thin line padding on top of all headers */
-#top, #top1, #top2, #top3, #top4{
+#top, #top1, #top2, #top3, #top4 {
   padding-bottom: 0.75em;
 }
 
 /* line height of all the info text in all the pages */
-#mobileIntro p, #mobileWorkInfo p, #mobileConnectInfo{
-line-height: 1.25em;
+#mobileIntro p, #mobileWorkInfo p, #mobileConnectInfo {
+  line-height: 1.25em;
 }
 
 /* Text and elements thar are aligned center */
-#mobileAboutMe h2, footer p{
+#mobileAboutMe h2, footer p {
   text-align: center;
 }
 
 /* All of the spacing and padding for the Arrows */
-#mobileHomepage h2, #mobileIntro p, #leftArrow, #leftArrow2, #leftArrow3, #leftArrow4{
+#mobileHomepage h2, #mobileIntro p, #leftArrow, #leftArrow2, #leftArrow3, #leftArrow4 {
   padding-left: 1em;
-  }
+}
 
 /****** TOP LOGO HEADER ******/
 /* color of the dark thin line on the top */
-#top{
+#top {
   background-color: #88abe9;
 }
 
 /* Margins between the logos and the header */
-#mobileLogo, .mobileLogo{
+#mobileLogo, .mobileLogo {
   margin: 1em 0.8em 1em 0.8em;
 }
 
 /* The header styles for the homepage */
-header h1{
+header h1 {
   width: 10%;
   margin-top: 1.5em;
   font-family: "Quicksand";
@@ -72,234 +85,225 @@ header h1{
 }
 
 /****** CURRENT JOB ******/
-#mobileHomepage h2{
+#mobileHomepage h2 {
   font-size: 18.5px;
   margin-top: 0.5em;
 }
 
 /****** LOCATION ******/
-#mobileHomepage h3{
+#mobileHomepage h3 {
   font-weight: 300;
   font-size: 17px;
   margin: -0.45em 0 0.75em 0.2em;
 }
 
 /* spacing on the location section */
-#location{
+#location {
   margin-left: -0.25em;
   width: 102.25%;
   border-bottom: 20px solid #b8cff1;
 }
 
 /* spacing on the location icon */
-#location img{
+#location img {
   margin: -0.5em 0 0 1.25em;
 }
 
 /****** BRIEF INTRO ******/
-#mobileIntro{
+#mobileIntro {
   background-color: #8eb1de;
   padding: 0.25em;
 }
 
 /****** INTERACTIVE PORTFOLIO LINK ******/
-a{
+a {
   text-decoration: none;
   color: #aaebf2;
 }
 
 /****** NAVIGATION ICONS ******/
 /* Headings for the Navigation Icons font size and spacing */
-#mobileProjectsLink h2, #mobileAboutLink h2, #mobileConnectLink h2, #mobileContactLink h2{
-  font-size:40px;
+#mobileProjectsLink h2, #mobileAboutLink h2, #mobileConnectLink h2, #mobileContactLink h2 {
+  font-size: 40px;
   margin-bottom: 0.5em;
 }
 
-#mobileProjectsLink h2{
+#mobileProjectsLink h2 {
   padding-left: 2.2em;
 }
 
-#mobileAboutLink h2{
+#mobileAboutLink h2 {
   padding-left: 1.9em;
 }
 
-#mobileConnectLink h2,#mobileContactLink h2{
-padding-left: 2.1em;
+#mobileConnectLink h2, #mobileContactLink h2 {
+  padding-left: 2.1em;
 }
 
 /****** NAVIGATION ICONS PLACEMENT ******/
-#projectIcon, #portraitIcon, #connectIcon, #contactIcon{
-    padding: 0 0.5em 0 0.5em;
+#projectIcon, #portraitIcon, #connectIcon, #contactIcon {
+  padding: 0 0.5em 0 0.5em;
 }
 
 /****** HOME PAGE ARROWS ******/
-#leftArrow, #rightArrow, #leftArrow2, #rightArrow2, #leftArrow3, #rightArrow3, #leftArrow4, #rightArrow4{
+#leftArrow, #rightArrow, #leftArrow2, #rightArrow2, #leftArrow3, #rightArrow3, #leftArrow4, #rightArrow4 {
   padding-bottom: 4.5em;
 }
 
 /********************* PROJECTS *********************/
 /* header and background color */
-#top1{
+#top1 {
   background-color: #164c73;
 }
 
 #mobileProjects {
   background-color: #9fd9ed;
+  padding-bottom: 2em;
 }
 
-#mobileProjects header section{
+#mobileProjects header section {
   background-color: #72bada;
 }
 
-#mobileRecentWork h3, #mobileOtherWork h3{
+#mobileRecentWork h3, #mobileOtherWork h3 {
   background-color: #52a8c6;
   font-size: 25px;
   padding: 0.75em;
 }
 
-#mobileOtherWork h3{
-  margin-top:-1.6em;
+#mobileOtherWork h3 {
+  margin-top: -1.6em;
 }
 
-#mobileRecentWork{
+#mobileRecentWork {
   background-color: #daf1f7;
 }
 
-#mobileRecentWork img{
+#mobileRecentWork img {
   padding: 4.1%;
   padding-top: 3em;
-    padding-bottom: 3em;
-    margin-top: -1.6em;
+  padding-bottom: 3em;
+  margin-top: -1.6em;
 }
 
-#mobileRecentWork h4{
-  font-size: 30px;
-  color: #FFF;
-  background: linear-gradient(#e8f6f9,#52a8c6);
+#mobileRecentWork h4 {
+  background: linear-gradient(#e8f6f9, #52a8c6);
   padding: 0.5em;
-opacity: 0.7;
+  opacity: 0.7;
   margin-top: -2.245em;
 }
 
-.mobileWorkImg{
+.mobileWorkImg {
   margin-left: 1.2em;
 }
 
-#mobileOtherWork h4{
+/* All Projects */
+#mobileOtherWork h4 {
   font-size: 25px;
-  color: #FFF;
-  background: linear-gradient(#e8f6f9,#52a8c6);
+  background: linear-gradient(#e8f6f9, #52a8c6);
   padding: 0.5em;
-opacity: 0.7;
+  opacity: 0.7;
   margin-top: -2.245em;
   margin-left: .75em;
   width: 295px;
 }
 
-
 /********************* ABOUT ME *********************/
 /* header and background color */
-#top2{
+#top2 {
   background-color: #ee89a7;
 }
 
 #mobileAboutMe {
   background-color: #f1bbc9;
+  padding-bottom: 4em;
 }
 
-#mobileAboutMe header section{
+#mobileAboutMe header section {
   background-color: #f2aac2;
 }
 
-#mobileWorkInfo, #mobileMeInfo, #mobileIntPortInfo{
+#mobileWorkInfo, #mobileMeInfo, #mobileIntPortInfo {
   background-color: #e19aaf;
 }
 
-
-#mobileAboutMe h2{
+#mobileAboutMe h2 {
   margin-left: 0.25em;
-  font-size:25px;
+  font-size: 25px;
 }
 
-#mobileIllustratedPortrait, #mobilePortrait, #adLogo{
+#mobileIllustratedPortrait, #mobilePortrait, #adLogo {
   padding: 0 0.75em 0 0.75em;
 }
 
-#mobileWorkInfo, #mobileMeInfo, #mobileIntPortInfo{
-padding: 0.5em 1.25em 0.5em 1.25em;
+#mobileWorkInfo, #mobileMeInfo, #mobileIntPortInfo {
+  padding: 0.5em 1.25em 0.5em 1.25em;
 }
 
 #mobileWork, #mobileMe, #mobileIntPortLink {
   padding-bottom: 1em;
 }
 
-#aboutLeftArrow, #aboutRightArrow, #aboutLeftArrow2, #aboutRightArrow2, #aboutLeftArrow3, #aboutRightArrow3{
+#aboutLeftArrow, #aboutRightArrow, #aboutLeftArrow2, #aboutRightArrow2, #aboutLeftArrow3, #aboutRightArrow3 {
   padding-bottom: 4em;
 }
 
-
-#aboutLeftArrow, #aboutLeftArrow2, #aboutLeftArrow3{
+#aboutLeftArrow, #aboutLeftArrow2, #aboutLeftArrow3 {
   padding-left: 0.75em;
 }
 
 /********************* CONNECT PAGE *********************/
 /* Mobile Connect Colors */
-#top3{
+#top3 {
   background-color: #31aa93;
 }
 
-#mobileConnect header section{
+#mobileConnect header section {
   background-color: #94ead9;
 }
 
 #mobileConnect {
   background-color: #d3f4ed;
+  padding-bottom: 4em;
 }
 
 /* Space around the mobile connect information section */
-#mobileConnectInfo h2{
+#mobileConnectInfo h2 {
   padding: 0.75em 0 0.5em 0.5em;
-  font-size: 30px;
 }
 
-#mobileConnectInfo p{
+#mobileConnectInfo p {
   padding: 0 1em 1em 1em;
   font-size: 16px;
   line-height: 1.3em;
   margin-top: -1.25em;
 }
 
-
-/* Flexbox between insta, linkedin, behance, and dribbble */
-.connectFlex{
-  display:flex;
-}
-
 /* Space between the connect icons */
-.mobileConnectIcons{
+.mobileConnectIcons {
   padding: 0 0 1em 1.25em;
 }
 
-.mobileConnectIcons img{
+.mobileConnectIcons img {
   margin-top: -0.65em;
 }
 
-#mobileConnect h3{
+#mobileConnect h3 {
   padding-left: 0.5em;
   font-size: 23px;
 }
 
-#mobileConnect section{
+#mobileConnect section {
   background-color: #7ae2cf;
 }
 
 /********************* CONTACT PAGE *********************/
 /* Contact Page Colors */
-#top4{
+#top4 {
   background-color: #bc5e3c;
 }
 
-#mobileContact header section{
+#mobileContact header section {
   background-color: #fa8d62;
 }
 
@@ -307,75 +311,673 @@ padding: 0.5em 1.25em 0.5em 1.25em;
   background-color: #ffbca4;
 }
 
-#mobileContact section, #mobileContact form{
+#mobileContact section, #mobileContact form {
   background-color: #f2774c;
 }
 
 /* Contact Page alignment */
-#mobileContactInfo,  form{
-    margin-top: 1em;
+#mobileContactInfo, form {
+  margin-top: 1em;
 }
 
-#mobileContact section{
+#mobileContact section {
   padding: 0.25em 0.5em 0.25em 1em;
 }
 
-#mobileContact h3{
-  font-size: 30px;
-  padding:0;
+#mobileContact h3 {
+  padding: 0;
 }
 
 /* Form styles */
-form{
+form {
   padding: 1em;
 }
-label{
-  color: #fff;
-}
 
-input[type="text"], input[type="email"]{
+input[type="text"], input[type="email"] {
   margin-bottom: 0.75em;
   margin-left: 0.5em;
 }
 
-#userEmail{
+#userEmail {
   margin-left: 2.5em;
 }
 
-#userSubject{
+#userSubject {
   margin-left: 1.6em;
 }
 
-#userMessage{
+#userMessage {
   margin: 0.5em 0 0.5em 0;
 }
 
-button{
+button {
   padding: 0.5em;
   border: none;
-  color: #fff;
 }
 
-#send{
+#send {
   background-color: #f2b85a;
 }
 
 #reset {
   background-color: #f79f84;
 }
+
 /********************* FOOTER *********************/
-footer{
+footer {
   background-color: #f3f3f3;
   padding: 0.05em;
-  margin-top: 0.75em
+  margin-top: 0.75em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
-footer p{
+footer p {
   color: #595959;
 }
 
 /****************************** TABLET VERSION ******************************/
 @media only screen and (min-width: 600px) {
 
+  /* Applies to multiple */
+  body {
+    background-color: #fff;
+  }
+
+  #tabletNav a, #tabletIntro2 h4, #allProjects h3 {
+    color: #fff;
+  }
+
+  #mobileProjectsLink, #mobileIntro, #aboutHeader #mobileAboutMe {
+    display: none;
+  }
+
+  #tabletNav, #Projects, #AboutPage, #aboutHeader #mobileHomepage, #aboutMePage {
+    display: block;
+  }
+
+  #tabletIntro, #featured, #allProjects .project-flex, #aboutMePage article {
+    display: flex;
+  }
+
+  #tabletIntro, #allProjects, #aboutMePage #aboutMe, #aboutMePage #intPortfolio {
+    margin-top: 1em;
+  }
+
+  #aboutMePage #work, #featured {
+    margin-top: -3em;
+  }
+
+  #featured h2, #allProjects h3 {
+    font-size: 27px;
+  }
+
+  #secondColumn, #tabletIntro2 {
+    margin-left: 1em;
+  }
+
+  /********************* HOME PAGE *********************/
+  /****** TOP LOGO HEADER ******/
+  header {
+    background-color: #b4ceec;
+  }
+
+  #topHeader {
+    background-color: #004d77;
+    padding: 1em;
+  }
+
+  header h1 {
+    margin-top: .75em;
+    font-size: 50px;
+  }
+
+  /* logo and name in header */
+  .mobileFlex {
+    padding-left: 10em;
+  }
+
+  /********************* Navigation *********************/
+  #tabletNav {
+    background-color: #86a9d9;
+    padding: 0.1em;
+  }
+
+  #tabletNav ul li {
+    display: inline;
+    padding-left: 1.5em;
+    font-size: 22px;
+  }
+
+  /********************* HOMEPAGE BIO *********************/
+  #tabletIntro1, #tabletIntro2 {
+    background-color: #88b1de;
+  }
+
+  /* Brief Intro of Me */
+  #tabletIntro1 {
+    width: 150%;
+    padding-left: 1em;
+    line-height: 1.25em;
+    font-size: 18px;
+  }
+
+  /* Current Job and Location */
+  #tabletIntro2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #tabletIntro2 h2 {
+    margin-top: 1.25em;
+    font-size: 20px;
+  }
+
+  #tabletIntro2 h3 {
+    font-size: 25px;
+  }
+
+  #tabletIntro2 h4 {
+    margin-top: -1.4em;
+  }
+
+  #tabletLocation img {
+    margin-left: -9em;
+    margin-top: -2em
+  }
+
+  /********************* HOMEPAGE PROJECTS *********************/
+  /* FEATURED PROJECT */
+  #featured {
+    background-color: #ebf1f9;
+    padding: 0.5em 1em 1em 2em;
+  }
+
+  #featured img {
+    margin-top: -0.25em;
+  }
+
+  #featured h2 {
+    color: #6f98c9;
+    width: 300px;
+    margin-top: 0.1em;
+  }
+
+  #featured h3 {
+    color: #5480b1;
+    font-size: 24px;
+  }
+
+  #featured p {
+    margin-top: -1em;
+    color: #2a4059;
+    font-size: 16.5px;
+    line-height: 1.25em;
+  }
+
+  #featuredText {
+    margin-top: 1.7em;
+    padding: 0 2em 0 1em;
+  }
+
+  /* All Projects */
+  #allProjects h3 {
+    background: linear-gradient(#ebf1f9, #6f98c9);
+    padding: 0.75em;
+    opacity: 0.85;
+    width: 310px;
+    margin-top: -2.8em;
+  }
+
+  #allProjects section {
+    padding-right: 1em;
+  }
+
+  #allProjects {
+    padding-left: 1.5em;
+    padding-bottom: 5em;
+  }
+
+  #allProjects h2{
+    color: #6f98c9;
+  }
+
+    #allProjects .project-raise, #projectsPage #allProjects .project-raise{
+        margin-top: -4em;
+      }
+
+#viewAll, #viewAll-desktop{
+background-color: #4e85c6;
+padding: 0.5em 1em 0.5em 1em;
+color:#fff;
+font-size: 25px;
+}
+
+  /********************* ABOUT PAGE *********************/
+  /* Header */
+  #aboutHeader #topHeader {
+    background-color: #dd5f90;
+  }
+
+  #aboutHeader #top {
+    background-color: #f282a7;
+  }
+
+  #aboutHeader header {
+    background-color: #f5a3c1;
+  }
+
+  #aboutHeader {
+    padding-bottom: 4em;
+  }
+
+
+  /* Navigation */
+  #aboutHeader nav {
+    background-color: #e977a4;
+  }
+
+  .email{
+    color: #1694a5;
+  }
+
+  /**** About Me Content **** /
+/* Colors */
+  #aboutMePage article {
+    background-color: #fdeef3;
+  }
+
+  #aboutMePage h2 {
+    color: #dd6495;
+  }
+
+  #aboutMePage p {
+    color: #89254e;
+    line-height: 1.25em;
+  }
+
+  /* Positioning */
+  #aboutMePage #work, #aboutMePage #aboutMe, #aboutMePage #intPortfolio {
+    padding: 0 1.5em 1em 1.5em;
+  }
+
+  /* Images Positioning */
+  #aboutMePage img, #aboutMePage img, #aboutMePage img {
+    padding-right: 1.25em;
+  }
+
+  /* Font size */
+  #aboutMePage #intPortfolio h2 {
+    font-size: 23px;
+  }
+
+  /* Lowers Text Position */
+  #aboutText, #workText, #intPortfolioText {
+    margin-top: 3.25em;
+  }
+
+
+  /********************* PROJECT PAGE *********************/
+  #projectsPage #mobileProjects {
+    display: none;
+  }
+
+  #tabletNav, #projectsPage #mobileHomepage {
+    display: block;
+  }
+
+  /* Header */
+  #projectsPage #topHeader {
+    background-color: #004d77;
+  }
+
+  #projectsPage #top {
+    background-color: #31a1bf;
+  }
+
+  #projectsPage header {
+    background-color: #5bbcde;
+  }
+
+  #projectsPage {
+    padding-bottom: 4em;
+  }
+
+  /* Navigation */
+  #projectsPage nav {
+    background-color: #289fbf;
+  }
+
+/* Featured Project Colors*/
+  #projectsPage #featured{
+    background-color: #e2f3f8;
+  }
+
+  #projectsPage #Projects h2{
+    color: #1f849b;
+  }
+
+  #projectsPage #Projects h3{
+    color: #136572;
+  }
+
+  #projectsPage #allProjects h3{
+    color: #fff;
+  }
+
+  /* All Projects */
+  #projectsPage  #allProjects h3 {
+    background: linear-gradient(#bae4ee, #0f6e75);
+    padding: 0.75em;
+    opacity: 0.7;
+    width: 310px;
+    margin-top: -2.8em;
+  }
+
+  /********************* CONNECT PAGE *********************/
+  #connectPage #mobileConnect{
+    display:none;
+  }
+
+  #connectPage #mobileHomepage{
+    display:block;
+  }
+
+  #connectIcons section{
+    display:flex;
+  }
+
+  #connectPage{
+    padding-bottom: 5em;
+    margin: auto;
+  }
+
+  /* Header */
+  #connectPage #topHeader {
+    background-color: #137562;
+  }
+
+  #connectPage #top {
+    background-color: #2fab93;
+  }
+
+  #connectPage header {
+    background-color: #77caba;
+  }
+
+  /* Navigation */
+  #connectPage nav {
+    background-color: #36b19b;
+  }
+
+  /* Connect Page */
+
+#connectIcons h2{
+      color: #36b19b;
+      font-size: 40px;
+      margin-top:-0.5em;
+      padding-left: 3.1em;
+    }
+
+    #connectIcons h3{
+      padding-left:1em;
+      color: #db6584;
+      margin: 1em 0 0 0;
+    }
+
+    #connectIcons{
+      padding-left:4em;
+    }
+    #connectIcons section{
+    padding-right: 3em;
+    }
+}
+
+/****************************** DESKTOP VERSION ******************************/
+@media only screen and (min-width: 1000px) {
+
+  /********************* HOME PAGE *********************/
+  /* Display Types */
+#mobileHomepage, #allProjects{
+  display:none;
+}
+
+#desktopheader{
+  display: block;
+}
+
+#allProjects-desktop .project-flex{
+  display:flex;
+}
+
+#desktopLocation{
+  display: flex;
+  margin-top: -1em;
+}
+
+#desktopNav, #hoverLink, #bioColor, #status, #bio, #desktopLogo{
+  position: fixed;
+}
+
+#desktopNav, #bioColor{
+  top:0;
+}
+
+#desktopNav, #hoverLink{
+  width: 100%;
+}
+
+/* Navigation */
+
+#desktopNav{
+  background-color: #254c70;
+  padding: 0.25em;
+    text-align: right;
+    right:0;
+}
+
+#desktopNav ul li {
+  display: inline;
+  padding-right: 1.5em;
+}
+
+#hoverLink{
+  top: 4em;
+}
+
+#home, #hoverLink{
+  background-color: #8face5;
+}
+
+#home, #about, #about:hover, #project, #project:hover, #connect, #connect:hover, #contact, #contact:hover {
+  padding: 0.65em;
+}
+
+#home, #about{
+  margin-right: -.85em;
+}
+
+#connect, #contact{
+  margin-left: -1em;
+}
+
+#hoverLink{
+  padding: 0.5em;
+}
+
+#about:hover{
+  background-color: #e28fa8;
+}
+
+#project:hover{
+  background-color: #82bad8;
+}
+
+#connect:hover{
+  background-color: #4ac6b4;
+}
+
+#contact:hover{
+  background-color: #fa8d62;
+}
+
+/* Introduction */
+#desktopLogo{
+  padding: 2em 5em 0 2em;
+  top: 5em;
+}
+
+#bioColor, #bio{
+  background-color: #bdd0ef;
+}
+
+#bioColor{
+  z-index: -1000;
+  padding: 50em 7.5em 50em 7.5em;
+  margin-left: 4em;
+  margin-right: 50em;
+}
+
+#status{
+  background-color: #95b2db;
+  margin-left:4em;
+  width: 240px;
+    top: 28em;
+    padding-bottom: 1em;
+}
+#bio{
+  top: 33.5em;
+    width: 216px;
+    padding: 0 0.75em 0 0.75em;
+    line-height: 1.25em;
+}
+
+#desktopLocation img{
+  padding: 0.6em 0.75em 0.5em 0.75em;
+  width: 5%;
+  height: 5%;
+}
+
+#desktopheader h2{
+  padding: 0 0.75em 0 0.75em;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+#desktopheader h3{
+  font-size: 14px;
+  padding-left: 0.5em;
+  margin: 0.7em -1em -1em -1em;
+}
+
+/* Projects */
+
+#allProjects-desktop img{
+  width: 90%;
+  height: 90%;
+}
+
+#featured{
+  width: 90%;
+}
+
+#Projects{
+  margin-left: 22.5em;
+  margin-top: 10em;
+  padding-bottom: 5em;
+}
+
+#allProjects-desktop h2{
+    color: #6f98c9;
+}
+
+#allProjects-desktop h3 {
+  background: linear-gradient(#ebf1f9, #6f98c9);
+  padding: 0.75em 0 0.75em 0.4em;
+  opacity: 0.85;
+  width:87.75%;
+  margin-top: -2.8em;
+}
+
+  /********************* ABOUT PAGE *********************/
+#aboutHeader #mobileHomepage, #aboutMePage{
+    display:none;
+  }
+
+  #desktopAbout{
+    display: block;
+  }
+
+  #aboutHeader header, #aboutHeader #home{
+    background-color: #254c70;
+  }
+
+  #aboutHeader #bioColor{
+      background-color: #eabeca;
+    }
+
+#aboutHeader #about, #aboutHeader #hoverLink{
+      background-color: #e28fa8;
+    }
+
+    #aboutHeader #home:hover{
+      background-color: #8face5;
+    }
+
+#desktopAboutLinks{
+  text-align: center;
+  position: fixed;
+  color: #fff;
+  top: 27em;
+  left: 1.5em;
+}
+
+#desktopAboutLinks ul{
+  list-style-type: none;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+#desktopAboutLinks ul li{
+  padding: 0.75em 0.725em 0.75em 0.725em;
+  font-size: 17.5px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+#gtkm, #ip{
+  background-color: #d389a4;
+}
+
+#wnp{
+background-color: #9b4262;
+}
+
+#desktopAbout{
+  margin-top: 8em;
+  margin-left: 25em;
+}
+
+#desktopAbout h2{
+  color: #d89eb0;
+}
+
+#desktopAbout section{
+  display: flex;
+}
+
+#desktopAbout p{
+  color: #333333;
+  width: 45%;
+  line-height: 2em;
+  padding: 2em;
+  margin-top: -1.25em;
+}
+
+#projectsPage #mobileHomepage{
+  display:none;
+}
 
 }
