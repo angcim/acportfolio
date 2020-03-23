@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand:600');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700|Quicksand:600');
 
 /****************************** MOBILE VERSION ******************************/
 /********************* HOME PAGE *********************/
 /* All of the mobile pages hidden except for homepage */
-nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact, #mobileProjects, #tabletNav, #tabletIntro, #Projects, #AboutPage, #aboutHeader #mobileHomepage, #aboutMePage, #projectsPage #mobileHomepage, #connectPage #mobileHomepage, #desktopAbout, #desktopheader, #Connect{
+nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAboutMe, #mobileGetToKnowMe, #mobileIntPortfolio, #mobileConnect, #mobileContact, #mobileProjects, #tabletNav, #tabletIntro, #Projects, #AboutPage, #aboutHeader #mobileHomepage, #aboutMePage, #projectsPage #mobileHomepage, #connectPage #mobileHomepage, #desktopAbout, #desktopheader,  #Connect {
   display: none;
 }
 
-#aboutHeader #mobileAboutMe, #projectsPage #mobileProjects, #connectPage #mobileConnect {
+#workPage, #projectsPage #featured2, #workPage-desktop, #workPage-desktopHome{
+  display: none;
+}
+
+#aboutHeader #mobileAboutMe, #projectsPage #mobileProjects, #connectPage #mobileConnect, #workPage #mobileProjects {
   display: block;
 }
 
@@ -20,6 +24,10 @@ nav, main, #mobileAboutLink, #mobileConnectLink, #mobileContactLink, #mobileAbou
 /* font sizes that applies to multiple */
 #mobileRecentWork h4, #mobileConnectInfo h2, #mobileContact h3, #connectIcons h3, #desktopNav a {
   font-size: 30px;
+}
+
+h5{
+  font-weight: 400;
 }
 
 /* Homepage typeface and background color */
@@ -208,6 +216,123 @@ a {
   width: 295px;
 }
 
+/********************* WORK PAGE *********************/
+#workPage{
+  background-color: #fff;
+  padding-bottom: 5em;
+}
+
+/* back button */
+#back{
+  background-color: #61bfd8;
+  display: flex;
+  padding:0.5em;
+  position: fixed;
+  height: 5%;
+  opacity: 0.85;
+  top: 5.5em;
+  padding-bottom: 1em
+}
+
+#back h5{
+  color: #fff;
+  font-size: 25px;
+  padding-left: 0.5em;
+  margin-top: 0.25em;
+}
+
+/* Work - Title and Category */
+#workPage #mobileWork h2{
+  background-color: #52a8c6;
+  padding: 0.75em;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#work-title{
+  line-height: 1.5em;
+}
+
+#work-category{
+  background-color: #72bada;
+  padding: 0.75em;
+  margin-top: -1.25em;
+  font-size: 22px;
+}
+
+/* Work - Image */
+#work-img{
+  margin-top: -12em;
+  padding-left: 8%;
+  width: 85%;
+  height: 85%;
+  padding-bottom: 5em;
+}
+
+/* Text */
+#mobileChallenge-h4, #mobileTools-h4, #mobileSolution-h4, #mobileLink-h4{
+  font-size: 25px;
+  padding-left:0.75em;
+}
+
+#mobileChallenge-h4, #mobileSolution-h4{
+  color: #fff;
+}
+
+#mobileChallengeP, #mobileToolsP, #mobileSolutionP1, #mobileLinkP {
+  padding: 0 1.25em 0 1.25em;
+  line-height: 1.5em;
+  margin-top: -1.5em;
+}
+
+/* Challenge Statement */
+#mobileChallenge{
+  background-color: #255c7f;
+  padding: 0.1em;
+  margin-top: -4em;
+}
+
+/* Tools Used */
+#mobileTools-h4{
+  color: #255c7f;
+margin-top: 0.75em;
+}
+
+#mobileToolsP{
+  color: #000;
+}
+
+/* Solution Text */
+#mobileSolution{
+  background-color: #ef9029;
+  padding: 0.25em 0 0.25em 0;
+}
+
+#mobileSolutionP1, #mobileSolutionP2, #mobileSolutionP3{
+  padding: 0 1.25em 0 1.25em;
+  line-height: 1.5em;
+}
+
+.space{
+  padding-bottom: 0.5em;
+}
+
+/* Links or PDFs of Work*/
+#mobileLink-h4{
+color: #ef9029;
+}
+
+#mobileLinkP{
+  color: #255c7f;
+}
+
+#topLink, #btt{
+  color: #29b7ef;
+  text-align: center;
+  padding-right: 1em;
+  font-size: 20px;
+}
+
 /********************* ABOUT ME *********************/
 /* header and background color */
 #top2 {
@@ -390,7 +515,7 @@ footer p {
     color: #fff;
   }
 
-  #mobileProjectsLink, #mobileIntro, #aboutHeader #mobileAboutMe, #allProjects-desktop {
+  #mobileProjectsLink, #mobileIntro, #aboutHeader #mobileAboutMe, #allProjects-desktop  {
     display: none;
   }
 
@@ -398,7 +523,7 @@ footer p {
     display: block;
   }
 
-  #tabletIntro, #featured, #allProjects .project-flex, #aboutMePage article {
+  #tabletIntro, #featured, #featured2, #allProjects .project-flex, #aboutMePage article {
     display: flex;
   }
 
@@ -406,11 +531,11 @@ footer p {
     margin-top: 1em;
   }
 
-  #aboutMePage #work, #featured {
+  #aboutMePage #work, #featured, #featured2 {
     margin-top: -3em;
   }
 
-  #featured h2, #allProjects h3 {
+  #featured h2, #featured2 h2 #allProjects h3 {
     font-size: 27px;
   }
 
@@ -490,34 +615,38 @@ footer p {
 
   /********************* HOMEPAGE PROJECTS *********************/
   /* FEATURED PROJECT */
-  #featured {
+#Projects #featured2{
+  display:none;
+}
+
+  #featured, #featured2 {
     background-color: #ebf1f9;
     padding: 0.5em 1em 1em 2em;
   }
 
-  #featured img {
+  #featured img, #featured2 img {
     margin-top: -0.25em;
   }
 
-  #featured h2 {
+  #featured h2, #featured2 h2 {
     color: #6f98c9;
     width: 300px;
     margin-top: 0.1em;
   }
 
-  #featured h3 {
+  #featured h3, #featured2 h3 {
     color: #5480b1;
     font-size: 24px;
   }
 
-  #featured p {
+  #featured p, #featured2 p  {
     margin-top: -1em;
     color: #2a4059;
     font-size: 16.5px;
     line-height: 1.25em;
   }
 
-  #featuredText {
+  #featuredText, #featuredText-desktop{
     margin-top: 1.7em;
     padding: 0 2em 0 1em;
   }
@@ -527,7 +656,7 @@ footer p {
     background: linear-gradient(#ebf1f9, #6f98c9);
     padding: 0.75em;
     opacity: 0.85;
-    width: 310px;
+    width: 321px;
     margin-top: -2.8em;
   }
 
@@ -648,11 +777,11 @@ footer p {
   }
 
   /* Featured Project Colors*/
-  #projectsPage #featured {
+  #projectsPage #featured, #projectsPage #featured2 {
     background-color: #e2f3f8;
   }
 
-  #projectsPage #Projects h2 {
+  #projectsPage #featured h2,   #projectsPage #allProjects h2 {
     color: #1f849b;
   }
 
@@ -661,9 +790,145 @@ footer p {
     background: linear-gradient(#bae4ee, #0f6e75);
     padding: 0.75em;
     opacity: 0.7;
-    width: 310px;
+    width: 321px;
     margin-top: -2.8em;
   }
+
+
+  /********************* WORK PAGE *********************/
+  #workPage-tablet{
+    display: none;
+    margin-top: -3em;
+  }
+
+  /* back button */
+  #back-tablet{
+    background-color: #3c9bb5;
+    display: flex;
+    padding: 1em;
+    position: fixed;
+    height: 4%;
+    opacity: 0.85;
+    top: 9em;
+    padding-bottom: 1em
+  }
+
+  #back-tablet h5,   #workPage-tablet #tabletWork h2{
+    color: #fff;
+  }
+
+  #back-tablet h5{
+    font-size: 30px;
+    padding-left: 0.5em;
+    margin-top: 0.1em;
+  }
+
+  /* Work - Title and Category */
+  #workPage-tablet #tabletWork h2{
+    background-color: #52a8c6;
+    padding: 0.35em 1em 0.35em 1em;
+    font-size: 35px;
+    margin-top: 0;
+  }
+
+  #work-title-tablet{
+    line-height: 1.5em;
+  }
+
+  #work-category-tablet{
+    background-color: #72bada;
+    padding: 0.5em 1.15em 0.5em 1.15em;
+    margin-top: -1em;
+    font-size: 30px;
+  }
+
+  /* Work - Image */
+
+  #colorBlock-tablet{
+    margin-top: -2em;
+  }
+
+  #work-img-tablet{
+    margin-top: -15em;
+    padding-left: 8%;
+    width: 85%;
+    height: 85%;
+    padding-bottom: 5em;
+  }
+
+  /* Text */
+  #tabletChallenge-h4, #tabletTools-h4, #tabletSolution-h4, #tabletLink-h4{
+    font-size: 30px;
+    padding-left:1em;
+    padding-top: 0.75em;
+  }
+
+  #tabletChallenge-h4, #tabletSolution-h4{
+    color: #fff;
+  }
+  #tabletChallengeP, #tabletToolsP, #tabletSolutionP1, #tabletLinkP {
+    padding: 0 1.5em 0 1.5em;
+    line-height: 1.5em;
+    margin-top: -1.5em;
+    font-size: 20px;
+  }
+
+  #tabletSolutionP2, #tabletSolutionP3{
+      font-size: 20px;
+  }
+
+
+
+  /* Challenge Statement */
+  #tabletChallenge{
+    background-color: #255c7f;
+    margin-top: -4em;
+    padding-bottom: 0.5em;
+  }
+
+  /* Tools Used */
+  #tabletTools-h4{
+    color: #255c7f;
+  margin-top: 0;
+  }
+
+  #tabletToolsP{
+    color: #000;
+  }
+
+  /* Solution Text */
+  #tabletSolution{
+    background-color: #ef9029;
+    padding: 0 0 0.25em 0;
+    margin-top: -1em;
+  }
+
+  #tabletSolutionP1, #tabletSolutionP2, #tabletSolutionP3{
+    padding: 0 1.25em 0 1.5em;
+    line-height: 1.5em;
+  }
+
+  /* Links or PDFs of Work*/
+  #tabletLink-h4{
+  color: #ef9029;
+  margin-top: 0;
+  }
+
+  #tabletLinkP{
+    color: #255c7f;
+  }
+
+  #topLink-tablet, #btt-tablet{
+    color: #29b7ef;
+    text-align: center;
+    padding-right: 1em;
+    font-size: 20px;
+  }
+
+  #btt-tablet{
+    padding-bottom: 2em;
+  }
+
 
   /********************* CONNECT PAGE *********************/
   #connectPage #mobileConnect, #desktop {
@@ -729,7 +994,11 @@ footer p {
 
   /********************* HOME PAGE *********************/
   /* Display Types Or Applies to All/Most Pages */
-  #mobileHomepage, #allProjects {
+  #wnp:hover, #gtkm:hover, #ip:hover, #all:hover, #uiux:hover, #web:hover, #graphic:hover, #anim:hover{
+   cursor: pointer;
+  }
+
+  #mobileHomepage, #allProjects, #workPage-tablet, #workPage-desktop {
     display: none;
   }
 
@@ -737,7 +1006,7 @@ footer p {
     display: block;
   }
 
-  #allProjects-desktop .project-flex, #desktopAbout section, #desktopLocation {
+  #allProjects-desktop .project-flex, #desktopAbout section, #desktopLocation, #Projects #featured2 {
     display: flex;
   }
 
@@ -871,7 +1140,7 @@ footer p {
     height: 90%;
   }
 
-  #featured {
+  #featured, #featured2 {
     width: 90%;
   }
 
@@ -891,6 +1160,121 @@ footer p {
     opacity: 0.85;
     width: 87.75%;
     margin-top: -2.8em;
+  }
+
+  /********************* HOME PAGE: WORK PAGE *********************/
+#featured, #workPage-desktopHome{
+    display: none;
+  }
+#featured2{
+    display: flex;
+  }
+
+  /* back button */
+  #back-desktopHome{
+    background-color: #73bbdb;
+    display: flex;
+    position:fixed;
+    padding: 0.75em;
+    opacity: 0.85;
+    height: 40px;
+    width: 125px;
+    margin-top: -3.5em;
+
+  }
+  #back-desktopHome:hover{
+  background-color: #45a0bf;
+  }
+
+  #back-desktopHome h5{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 0.5em;
+    margin-top: 0.1em;
+  }
+
+  #colorBlock-desktopHome{
+    width: 80%;
+    height:80px;
+    padding-right:50%;
+    margin-top: 2em;
+  }
+
+  #work-img-desktopHome{
+    padding-left: 3%;
+    width: 40%;
+    height: 40%;
+  }
+
+  #workText-desktopHome{
+    width: 45%;
+    margin: -33% 0 0 45%;
+  }
+
+  #desktopHomeChallenge, #desktopHomeSolution, #desktopHomeTools, #desktopHomeLink{
+    padding: 0 1em 0em 1em;
+    margin-top: -1em;
+  }
+
+  #desktopHomeTools, #desktopHomeSolution, #desktopHomeLink{
+    margin-top: -2.5em;
+  }
+
+    #desktopHomeTools, #desktopHomeLink{
+      background-color: #f2f4f6;
+    }
+
+  #work-title-desktopHome, #work-category-desktopHome{
+    color: #fff;
+  }
+
+    #work-title-desktopHome{
+      font-size: 30px;
+      font-weight: 700
+    }
+
+  #desktopHomeLinkP{
+      color: #255c7f;
+    }
+
+    #desktopHomeLinkP:hover{
+      color: #45ace5;
+    }
+
+  #work-category-desktopHome{
+    font-size: 27px;
+    margin-top: -0.5em;
+    font-weight: 300;
+  }
+
+  #desktopHomeChallenge-h4, #desktopHomeTools-h4, #desktopHomeSolution-h4, #desktopHomeLink-h4{
+    font-size: 27px;
+    padding-top: 0.5em;
+    font-weight: 700;
+  }
+
+  #desktopHomeChallengeP, #desktopHomeSolutionP1, #desktopHomeToolsP, #desktopHomeLinkP{
+    margin-top: -1.25em;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  #desktopHomeSolutionP2, #desktopHomeSolutionP3{
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  #desktopHomeSolutionP2{
+      margin-top: -1em;
+    }
+
+  #desktopHomeSolution{
+    padding-bottom: 1em;
+  }
+
+  .space{
+    padding: 0
   }
 
   /********************* ABOUT PAGE *********************/
@@ -1013,6 +1397,122 @@ footer p {
   opacity: 0.5;
   border-radius: 50%;
 }
+
+  /********************* WORK PAGE *********************/
+  #projectsPage #featured, #workPage-desktop{
+    display: none;
+  }
+  #projectsPage #featured2{
+    display: flex;
+  }
+
+  /* back button */
+  #back-desktop{
+    background-color: #73bbdb;
+    display: flex;
+    position:fixed;
+    padding: 0.75em;
+    opacity: 0.85;
+    height: 40px;
+    width: 125px;
+    margin-top: -3.5em;
+
+  }
+  #back-desktop:hover{
+background-color: #45a0bf;
+  }
+
+  #back-desktop h5{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 0.5em;
+    margin-top: 0.1em;
+  }
+
+  #colorBlock-desktop{
+    width: 80%;
+    height:80px;
+    padding-right:50%;
+    margin-top: 2em;
+  }
+
+  #work-img-desktop{
+    padding-left: 3%;
+    width: 40%;
+    height: 40%;
+  }
+
+  #workText-desktop{
+    width: 45%;
+    margin: -33% 0 0 45%;
+  }
+
+  #desktopChallenge, #desktopSolution, #desktopTools, #desktopLink{
+    padding: 0 1em 0em 1em;
+    margin-top: -1em;
+  }
+
+  #desktopTools, #desktopSolution, #desktopLink{
+    margin-top: -2.5em;
+  }
+
+    #desktopTools, #desktopLink{
+      background-color: #f2f4f6;
+    }
+
+  #work-title-desktop, #work-category-desktop{
+    color: #fff;
+  }
+
+    #work-title-desktop{
+      font-size: 30px;
+      font-weight: 700
+    }
+
+#desktopLinkP{
+      color: #255c7f;
+    }
+
+    #desktopLinkP:hover{
+      color: #45ace5;
+    }
+
+#work-category-desktop{
+    font-size: 27px;
+    margin-top: -0.5em;
+    font-weight: 300;
+  }
+
+#desktopChallenge-h4, #desktopTools-h4, #desktopSolution-h4, #desktopLink-h4{
+    font-size: 27px;
+    padding-top: 0.5em;
+    font-weight: 700;
+  }
+
+  #desktopChallengeP, #desktopSolutionP1, #desktopToolsP, #desktopLinkP{
+    margin-top: -1.25em;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+  }
+
+#desktopSolutionP2, #desktopSolutionP3{
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  #desktopSolutionP2{
+      margin-top: -1em;
+    }
+
+#desktopSolution{
+    padding-bottom: 1em;
+  }
+
+  .space{
+    padding: 0
+  }
+
 
   /********************* CONNECT PAGE *********************/
 #connectPage #mobileHomepage, #connectIcons {
@@ -1140,28 +1640,28 @@ footer p {
   }
 
 /* Featured */
-  #featured {
+  #featured, #featured2 {
     width: 90%;
     padding: 1em 0 2em 3em;
   }
 
-    #featured img, #featured h2{
+    #featured img, #featured h2, #featured2 img, #featured2 h2{
       width: 200%;
     }
 
-    #featured h2{
+    #featured h2, #featured2 h2{
       font-size: 35px;
     }
 
-    #featured h3, h2{
+    #featured h3, h2, #featured2 h3{
       font-size: 30px;
     }
 
-    #featured p{
+    #featured p, #featured2 p{
       font-size: 20px;
     }
 
-    #featuredText {
+    #featuredText, #featuredText-desktop {
       margin: 2.5em 0 0 12em;
     }
 
