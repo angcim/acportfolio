@@ -702,7 +702,7 @@ desktopNEGweb.addEventListener('click', function() {
   document.getElementById('allProjects-desktop').style.display = 'none';
   document.getElementById('featured2').style.display = 'none';
 
-  document.getElementById('workText-desktop').style.marginTop = "-73%"
+  document.getElementById('workText-desktopHome').style.marginTop = "-73%"
 
   desktopTitle.innerHTML = 'NEW ERA GARDEN WEBSITE DESIGN';
   desktopCat.innerHTML = 'USER INTERFACE / USER EXPERIENCE';
