@@ -16,6 +16,8 @@ var mobileHealthy = document.querySelector('#mobile-healthybud');
 var mobilePoster = document.querySelector('#mobile-poster');
 var mobileAnim = document.querySelector('#mobile-animation');
 var mobileBook = document.querySelector('#mobile-book');
+var mobileGCmobile = document.querySelector('#mobile-gc-mobile');
+var mobileMFbook = document.querySelector('#mobile-mf-book');
 
 //IMAGES
 var mobileTitle = document.querySelector('#work-title');
@@ -56,6 +58,8 @@ var tabletHealthy = document.querySelector('#tablet-healthybud');
 var tabletPoster = document.querySelector('#tablet-poster');
 var tabletAnim = document.querySelector('#tablet-animation');
 var tabletBook = document.querySelector('#tablet-book');
+var tabletGCmobile = document.querySelector('#tablet-gc-mobile');
+var tabletMFbook = document.querySelector('#tablet-mf-book');
 
 //IMAGES
 var tabletTitle = document.querySelector('#work-title-tablet');
@@ -97,6 +101,8 @@ var desktopHealthy = document.querySelector('#nine');
 var desktopPoster = document.querySelector('#ten');
 var desktopAnim = document.querySelector('#eleven');
 var desktopBook = document.querySelector('#twelve');
+var desktopGCmobile = document.querySelector('#thirteen');
+var desktopMFbook = document.querySelector('#fourteen');
 
 //IMAGES
 var desktopTitle = document.querySelector('#work-title-desktop');
@@ -154,6 +160,90 @@ back.addEventListener('click', function() {
   document.getElementById('workPage').style.display = 'none';
 });
 
+// GC MOBILE MOCKUPSS
+mobileGCmobile.addEventListener('click', function() {
+  document.getElementById('workPage').style.display = 'block';
+  document.getElementById('mobileOtherWork').style.display = 'none';
+  document.getElementById('mobileRecentWork').style.display = 'none';
+
+  mobileTitle.innerHTML = 'GUIDELINE CENTRAL MOBILE MOCKUPS';
+  mobileCat.innerHTML = 'USER INTERFACE / USER EXPERIENCE';
+
+  document.getElementById('colorBlock').style.backgroundColor = '#275067';
+  document.getElementById('colorBlock').style.padding = '10em';
+  document.getElementById('colorBlock').style.paddingBottom = '30em';
+
+  document.getElementById('work-img').src = "images/projects/guidelinecentral.png";
+  document.getElementById('work-img').alt = "GUIDELINE CENTRAL MOBILE MOCKUPS";
+  document.getElementById('work-img').height = "799";
+  document.getElementById('work-img').style.marginTop = "-38em";
+
+  document.getElementById('mobileChallenge').style.backgroundColor = '#1D8FBB';
+  document.getElementById('mobileChallenge-h4').style.color = '#ffffff';
+  document.getElementById('mobileChallengeP').style.color = '#ffffff';
+  mobileChallengeP.innerHTML = 'Create mobile designs for Guideline Central.';
+
+  document.getElementById('mobileTools-h4').style.color = '#ACD3E4';
+  mobileToolsP.innerHTML = 'Adobe Illustrator <br> InVision App';
+
+  document.getElementById('mobileSolution').style.backgroundColor = '#578EB4';
+  document.getElementById('mobileSolution-h4').style.color = '#ffffff';
+  document.getElementById('mobileSolutionP1').style.color = '#ffffff';
+  document.getElementById('mobileSolutionP2').style.color = '#ffffff';
+  document.getElementById('mobileSolutionP3').style.color = '#ffffff';
+  mobileSolutionP1.innerHTML = 'For Guideline Central, my main project was to create mobile responsive designs for the website while still maintaining the brand and functionalities. The mobile designs were created using Adobe Illustrator and then prototyped using Invision App. To start, I brainstormed and looked through the desktop version of the website. I experimented with different design techniques and principlese to put all of the content in a smaller screen. After the mockups were finished, I then implement the design through Invision App to test the functionalty and flow of the design. ';
+
+    mobileSolutionP2.innerHTML = 'Some solutions I came up with in comparison with the website is implementing buttons and creating new modals for the webpages. One of the challenges I faced was working with multiple navigations in one screen. The pocket guide contains four navigations (including the main navigation) and I had to find a way to distinguish each one. To successfully achieve having multiple navigations in one screen, I had to make each one different. The main navigation uses the hamburger icon, the subnavigation is a horizontal scroll, the third navigation are a horizontal navigation with different colors from the subnavigation (to avoid confusion), and a drop down table of contents.';
+
+      mobileSolutionP3.innerHTML ='';
+
+  document.getElementById('mobileLink-h4').style.color = '#275067';
+  mobileLinkA.setAttribute('href', 'https://invis.io/8TZ1D4JA346#/434137538_Mobile_Browse_Guidelines_Logged_Out');
+  mobileLinkP.innerHTML = 'Guideline Central Landing Pages Prototype'
+});
+
+// MONARCH FITNESS GUIDEBOOK
+mobileMFbook.addEventListener('click', function() {
+  document.getElementById('workPage').style.display = 'block';
+  document.getElementById('mobileOtherWork').style.display = 'none';
+  document.getElementById('mobileRecentWork').style.display = 'none';
+
+  mobileTitle.innerHTML = 'MONARCH FITNESS GUIDEBOOK';
+  mobileCat.innerHTML = 'GRAPHIC DESIGN';
+
+  document.getElementById('colorBlock').style.backgroundColor = '#F8BF90';
+  document.getElementById('colorBlock').style.padding = '10em';
+  document.getElementById('colorBlock').style.paddingBottom = '30em';
+
+  document.getElementById('work-img').src = "images/projects/mf-book.png";
+  document.getElementById('work-img').alt = "MONARCH FITNESS GUIDEBOOK";
+  document.getElementById('work-img').height = "799";
+  document.getElementById('work-img').style.marginTop = "-38em";
+
+  document.getElementById('mobileChallenge').style.backgroundColor = '#15B2E1';
+  document.getElementById('mobileChallenge-h4').style.color = '#ffffff';
+  document.getElementById('mobileChallengeP').style.color = '#ffffff';
+  mobileChallengeP.innerHTML = 'Create and design a guidebook for Monarch Fitness';
+
+  document.getElementById('mobileTools-h4').style.color = '#F79841';
+  mobileToolsP.innerHTML = 'Adobe Illustrator <br> Adobe InDesign';
+
+  document.getElementById('mobileSolution').style.backgroundColor = '#F79841';
+  document.getElementById('mobileSolution-h4').style.color = '#ffffff';
+  document.getElementById('mobileSolutionP1').style.color = '#ffffff';
+  document.getElementById('mobileSolutionP2').style.color = '#ffffff';
+  document.getElementById('mobileSolutionP3').style.color = '#ffffff';
+  mobileSolutionP1.innerHTML = 'Monarch Fitness - 12 Week Guidebook is a 26 page guidebook that was created using Adobe InDesign. It contains a bright and bold color scheme that complements the fitness brand. I used Futura for typography to match the boldness of the design. The design was truly inspired with their monarch butterfly logo (which is made from a previous designer). ';
+
+    mobileSolutionP2.innerHTML = '';
+
+      mobileSolutionP3.innerHTML ='';
+
+  document.getElementById('mobileLink-h4').style.color = '#15B2E1';
+  mobileLinkA.setAttribute('href', '#');
+  mobileLinkP.innerHTML = 'N/A'
+});
+
 // EV EXPLORER
 mobileVECC.addEventListener('click', function() {
   document.getElementById('workPage').style.display = 'block';
@@ -178,7 +268,7 @@ mobileVECC.addEventListener('click', function() {
   mobileChallengeP.innerHTML = 'Redesign the EV Explorer website.';
 
   document.getElementById('mobileTools-h4').style.color = '#ef8b6e';
-  mobileToolsP.innerHTML = 'Adobe InDesign';
+  mobileToolsP.innerHTML = 'Adobe Illustrator';
 
   document.getElementById('mobileSolution').style.backgroundColor = '#f8d053';
   document.getElementById('mobileSolution-h4').style.color = '#ffffff';
@@ -723,6 +813,90 @@ tabletBack.addEventListener('click', function() {
   document.getElementById('featured').style.display = 'flex';
   document.getElementById('allProjects').style.display = 'block';
   document.getElementById('workPage-tablet').style.display = 'none';
+});
+
+// GC MOBILE MOCKUPSS
+tabletGCmobile.addEventListener('click', function() {
+  document.getElementById('workPage-tablet').style.display = 'block';
+  document.getElementById('allProjects').style.display = 'none';
+  document.getElementById('featured').style.display = 'none';
+
+  tabletTitle.innerHTML = 'GUIDELINE CENTRAL MOBILE MOCKUPS';
+  tabletCat.innerHTML = 'USER INTERFACE / USER EXPERIENCE';
+
+  document.getElementById('colorBlock-tablet').style.backgroundColor = '#275067';
+  document.getElementById('colorBlock-tablet').style.padding = '20em';
+  document.getElementById('colorBlock-tablet').style.paddingBottom = '30em';
+
+  document.getElementById('work-img-tablet').src = "images/projects/guidelinecentral.png";
+  document.getElementById('work-img-tablet').alt = "GUIDELINE CENTRAL MOBILE MOCKUPS";
+  document.getElementById('work-img-tablet').height = "619";
+  document.getElementById('work-img-tablet').style.marginTop = "-45em";
+
+  document.getElementById('tabletChallenge').style.backgroundColor = '#1D8FBB';
+  document.getElementById('tabletChallenge-h4').style.color = '#ffffff';
+  document.getElementById('tabletChallengeP').style.color = '#ffffff';
+  tabletChallengeP.innerHTML = 'Create mobile designs for Guideline Central.';
+
+  document.getElementById('mobileTools-h4').style.color = '#ACD3E4';
+  tabletToolsP.innerHTML = 'Adobe Illustrator <br> InVision App';
+
+  document.getElementById('tabletSolution').style.backgroundColor = '#578EB4';
+  document.getElementById('tabletSolution-h4').style.color = '#ffffff';
+  document.getElementById('tabletSolutionP1').style.color = '#ffffff';
+  document.getElementById('tabletSolutionP2').style.color = '#ffffff';
+  document.getElementById('tabletSolutionP3').style.color = '#ffffff';
+  tabletSolutionP1.innerHTML = 'For Guideline Central, my main project was to create mobile responsive designs for the website while still maintaining the brand and functionalities. The mobile designs were created using Adobe Illustrator and then prototyped using Invision App. To start, I brainstormed and looked through the desktop version of the website. I experimented with different design techniques and principlese to put all of the content in a smaller screen. After the mockups were finished, I then implement the design through Invision App to test the functionalty and flow of the design. ';
+
+    tabletSolutionP2.innerHTML = 'Some solutions I came up with in comparison with the website is implementing buttons and creating new modals for the webpages. One of the challenges I faced was working with multiple navigations in one screen. The pocket guide contains four navigations (including the main navigation) and I had to find a way to distinguish each one. To successfully achieve having multiple navigations in one screen, I had to make each one different. The main navigation uses the hamburger icon, the subnavigation is a horizontal scroll, the third navigation are a horizontal navigation with different colors from the subnavigation (to avoid confusion), and a drop down table of contents.';
+
+      tabletSolutionP3.innerHTML ='';
+
+  document.getElementById('tabletLink-h4').style.color = '#275067';
+  tabletLinkA.setAttribute('href', 'https://invis.io/8TZ1D4JA346#/434137538_Mobile_Browse_Guidelines_Logged_Out');
+  tabletLinkP.innerHTML = 'Guideline Central Landing Pages Prototype'
+});
+
+// MONARCH FITNESS GUIDEBOOK
+tabletMFbook.addEventListener('click', function() {
+  document.getElementById('workPage-tablet').style.display = 'block';
+  document.getElementById('allProjects').style.display = 'none';
+  document.getElementById('featured').style.display = 'none';
+
+  tabletTitle.innerHTML = 'MONARCH FITNESS GUIDEBOOK';
+  tabletCat.innerHTML = 'GRAPHIC DESIGN';
+
+  document.getElementById('colorBlock-tablet').style.backgroundColor = '#F8BF90';
+  document.getElementById('colorBlock-tablet').style.padding = '10em';
+  document.getElementById('colorBlock-tablet').style.paddingBottom = '30em';
+
+  document.getElementById('work-img-tablet').src = "images/projects/mf-book.png";
+  document.getElementById('work-img-tablet').alt = "MONARCH FITNESS GUIDEBOOK";
+  document.getElementById('work-img-tablet').height = "799";
+  document.getElementById('work-img-tablet').style.marginTop = "-37em";
+
+  document.getElementById('tabletChallenge').style.backgroundColor = '#15B2E1';
+  document.getElementById('tabletChallenge-h4').style.color = '#ffffff';
+  document.getElementById('tabletChallengeP').style.color = '#ffffff';
+  tabletChallengeP.innerHTML = 'Create and design a guidebook for Monarch Fitness';
+
+  document.getElementById('tabletTools-h4').style.color = '#F79841';
+  tabletToolsP.innerHTML = 'Adobe Illustrator <br> Adobe InDesign';
+
+  document.getElementById('tabletSolution').style.backgroundColor = '#F79841';
+  document.getElementById('tabletSolution-h4').style.color = '#ffffff';
+  document.getElementById('tabletSolutionP1').style.color = '#ffffff';
+  document.getElementById('tabletSolutionP2').style.color = '#ffffff';
+  document.getElementById('tabletSolutionP3').style.color = '#ffffff';
+  tabletSolutionP1.innerHTML = 'Monarch Fitness - 12 Week Guidebook is a 26 page guidebook that was created using Adobe InDesign. It contains a bright and bold color scheme that complements the fitness brand. I used Futura for typography to match the boldness of the design. The design was truly inspired with their monarch butterfly logo (which is made from a previous designer). ';
+
+    tabletSolutionP2.innerHTML = '';
+
+      tabletSolutionP3.innerHTML ='';
+
+  document.getElementById('tabletLink-h4').style.color = '#15B2E1';
+  tabletLinkA.setAttribute('href', '#');
+  tabletLinkP.innerHTML = 'N/A'
 });
 
 // EV EXPLORER
@@ -1298,6 +1472,90 @@ desktopBack.addEventListener('click', function() {
   document.getElementById('allProjects-desktop').style.display = 'block';
   document.getElementById('workPage-desktop').style.display = 'none';
 });
+
+// GC MOBILE MOCKUPSS
+// desktopGCmobile.addEventListener('click', function() {
+//   document.getElementById('workPage-desktop').style.display = 'block';
+//   document.getElementById('allProjects-desktop').style.display = 'none';
+//   document.getElementById('featured2').style.display = 'none';
+//
+//   desktopTitle.innerHTML = 'GUIDELINE CENTRAL MOBILE MOCKUPS';
+//   desktopCat.innerHTML = 'USER INTERFACE / USER EXPERIENCE';
+//
+//   document.getElementById('colorBlock-desktop').style.backgroundColor = '#275067';
+//   document.getElementById('colorBlock-desktop').style.padding = '20em';
+//   document.getElementById('colorBlock-desktop').style.paddingBottom = '30em';
+//
+//   document.getElementById('work-img-desktop').src = "images/projects/guidelinecentral.png";
+//   document.getElementById('work-img-desktop').alt = "GUIDELINE CENTRAL MOBILE MOCKUPS";
+//   document.getElementById('work-img-desktop').height = "619";
+//   document.getElementById('work-img-desktop').style.marginTop = "-45em";
+//
+//   document.getElementById('desktopChallenge').style.backgroundColor = '#1D8FBB';
+//   document.getElementById('desktopChallenge-h4').style.color = '#ffffff';
+//   document.getElementById('desktopChallengeP').style.color = '#ffffff';
+//   desktopChallengeP.innerHTML = 'Create mobile designs for Guideline Central.';
+//
+//   document.getElementById('desktopTools-h4').style.color = '#ACD3E4';
+//   desktopToolsP.innerHTML = 'Adobe Illustrator <br> InVision App';
+//
+//   document.getElementById('desktopSolution').style.backgroundColor = '#578EB4';
+//   document.getElementById('desktopSolution-h4').style.color = '#ffffff';
+//   document.getElementById('desktopSolutionP1').style.color = '#ffffff';
+//   document.getElementById('desktopSolutionP2').style.color = '#ffffff';
+//   document.getElementById('desktopSolutionP3').style.color = '#ffffff';
+//   desktopSolutionP1.innerHTML = 'For Guideline Central, my main project was to create mobile responsive designs for the website while still maintaining the brand and functionalities. The mobile designs were created using Adobe Illustrator and then prototyped using Invision App. To start, I brainstormed and looked through the desktop version of the website. I experimented with different design techniques and principlese to put all of the content in a smaller screen. After the mockups were finished, I then implement the design through Invision App to test the functionalty and flow of the design. ';
+//
+//     desktopSolutionP2.innerHTML = 'Some solutions I came up with in comparison with the website is implementing buttons and creating new modals for the webpages. One of the challenges I faced was working with multiple navigations in one screen. The pocket guide contains four navigations (including the main navigation) and I had to find a way to distinguish each one. To successfully achieve having multiple navigations in one screen, I had to make each one different. The main navigation uses the hamburger icon, the subnavigation is a horizontal scroll, the third navigation are a horizontal navigation with different colors from the subnavigation (to avoid confusion), and a drop down table of contents.';
+//
+//       desktopSolutionP3.innerHTML ='';
+//
+//   document.getElementById('desktopLink-h4').style.color = '#275067';
+//   desktopLinkA.setAttribute('href', 'https://invis.io/8TZ1D4JA346#/434137538_Mobile_Browse_Guidelines_Logged_Out');
+//   desktopLinkP.innerHTML = 'Guideline Central Landing Pages Prototype'
+// });
+
+// MONARCH FITNESS GUIDEBOOK
+// tabletMFbook.addEventListener('click', function() {
+//   document.getElementById('workPage-desktop').style.display = 'block';
+//   document.getElementById('allProjects-desktop').style.display = 'none';
+//   document.getElementById('featured2').style.display = 'none';
+//
+//   tabletTitle.innerHTML = 'MONARCH FITNESS GUIDEBOOK';
+//   tabletCat.innerHTML = 'GRAPHIC DESIGN';
+//
+//   document.getElementById('colorBlock-desktop').style.backgroundColor = '#F8BF90';
+//   document.getElementById('colorBlock-desktop').style.padding = '10em';
+//   document.getElementById('colorBlock-desktop').style.paddingBottom = '30em';
+//
+//   document.getElementById('work-img-desktop').src = "images/projects/mf-book.png";
+//   document.getElementById('work-img-desktop').alt = "MONARCH FITNESS GUIDEBOOK";
+//   document.getElementById('work-img-desktop').height = "799";
+//   document.getElementById('work-img-desktop').style.marginTop = "-37em";
+//
+//   document.getElementById('tabletChallenge').style.backgroundColor = '#15B2E1';
+//   document.getElementById('tabletChallenge-h4').style.color = '#ffffff';
+//   document.getElementById('tabletChallengeP').style.color = '#ffffff';
+//   tabletChallengeP.innerHTML = 'Create and design a guidebook for Monarch Fitness';
+//
+//   document.getElementById('tabletTools-h4').style.color = '#F79841';
+//   tabletToolsP.innerHTML = 'Adobe Illustrator <br> Adobe InDesign';
+//
+//   document.getElementById('tabletSolution').style.backgroundColor = '#F79841';
+//   document.getElementById('tabletSolution-h4').style.color = '#ffffff';
+//   document.getElementById('tabletSolutionP1').style.color = '#ffffff';
+//   document.getElementById('tabletSolutionP2').style.color = '#ffffff';
+//   document.getElementById('tabletSolutionP3').style.color = '#ffffff';
+//   tabletSolutionP1.innerHTML = 'Monarch Fitness - 12 Week Guidebook is a 26 page guidebook that was created using Adobe InDesign. It contains a bright and bold color scheme that complements the fitness brand. I used Futura for typography to match the boldness of the design. The design was truly inspired with their monarch butterfly logo (which is made from a previous designer). ';
+//
+//     tabletSolutionP2.innerHTML = '';
+//
+//       tabletSolutionP3.innerHTML ='';
+//
+//   document.getElementById('mobileLink-h4').style.color = '#15B2E1';
+//   tabletLinkA.setAttribute('href', '#');
+//   tabletLinkP.innerHTML = 'N/A'
+// });
 
 // EV EXPLORER
 desktopVECC.addEventListener('click', function() {

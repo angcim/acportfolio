@@ -581,91 +581,179 @@ desktopWebPage.addEventListener('click', function() {
 });
 
 // CCRG INFOGRAPHIC REPORT
+// desktopCCRG.addEventListener('click', function() {
+//   document.getElementById('workPage-desktopHome').style.display = 'block';
+//   document.getElementById('allProjects-desktop').style.display = 'none';
+//   document.getElementById('featured2').style.display = 'none';
+//
+//   document.getElementById('workText-desktopHome').style.marginTop = "-83%";
+//
+//   desktopTitle.innerHTML = 'COLLEGE CAREER AND READINESS GUIDE';
+//   desktopCat.innerHTML = 'INFOGRAPHIC REPORT';
+//
+//   document.getElementById('colorBlock-desktopHome').style.backgroundColor = '#65b7ce';
+//   document.getElementById('colorBlock-desktopHome').style.padding = '5.5em';
+//
+//   document.getElementById('work-img-desktopHome').src = "images/projects/ccrg.png";
+//   document.getElementById('work-img-desktopHome').alt = "CCRG Infographic Report";
+//   document.getElementById('work-img-desktopHome').height = "638";
+//   document.getElementById('work-img-desktopHome').style.marginTop = "-13.5em";
+//
+//   document.getElementById('desktopHomeChallenge').style.backgroundColor = '#41a1b7';
+//   document.getElementById('desktopHomeChallenge-h4').style.color = '#ffffff';
+//   document.getElementById('desktopHomeChallengeP').style.color = '#ffffff';
+//   desktopChallengeP.innerHTML = 'Create an infographic report for CCRG. The report should include an outline of a student with a grad cap and a brain in the center. Around the student will be surrounded by thought bubbles with text and images. Brainstorm and think of an illustration that would best fit inside the brain for the report. After, create a save a date for that infographic report.';
+//
+//   document.getElementById('desktopHomeTools-h4').style.color = '#99b8d8';
+//   document.getElementById('desktopHomeToolsP').style.color = '#000000';
+//   desktopToolsP.innerHTML = 'Adobe Illustrator<br>Atom Text Editor<br>Eclipse';
+//
+//   document.getElementById('desktopHomeSolution').style.backgroundColor = '#274169';
+//   document.getElementById('desktopHomeSolution-h4').style.color = '#ffffff';
+//   document.getElementById('desktopHomeSolutionP1').style.color = '#ffffff';
+//   document.getElementById('desktopHomeSolutionP2').style.color = '#ffffff';
+//   document.getElementById('desktopHomeSolutionP3').style.color = '#ffffff';
+//   desktopSolutionP1.innerHTML = 'For Spotlight Education, I had to create an infographic report called “College and Career Readiness Guide”. This page is the front page of the CCRG reports and acts as as an illustrated table of contents for the students and parents. The page includes up to seven bubbles, but this mockup only shows five pages. After creating the report, I had make a “Save the Date” that would then be sent through mailchimp. For this design, the client wanted it to have the image of the student with the brain and grad cap. Since the two pieces of work are related, I made sure I used the same color scheme as the infographic report for consistency.';
+//
+//     desktopSolutionP2.innerHTML = 'The main requirements of the report includes a student with a grad cap and a brain in the middle of the page. Around the student includes thought bubbles that represents a page of each report. The order of the pages goes from the bottom left all the up, and then to the bottom right page. Each thought bubble has the page number, title of the page, a small icon that represents the page, and brief text that directs the user to that page. The colors used for the infographic report are different shades of blue and white because it’s calm and easy on the eyes for students and parents. Inside the brain contains puzzle pieces of different subjects from school to represent.';
+//
+//       desktopSolutionP3.innerHTML = 'The infographic report was made in Adobe Illustrator, but then was later implemented through Eclipse, which is an IDE. I used Eclipse to create a BIRT template of the report. For the BIRT template, I hard coded the text and images, and used CSS to style the text. The BIRT templates would be then given to our team to create params that would allow mass production of the product.';
+//
+//   document.getElementById('desktopHomeLink-h4').style.color = '#65b7ce';
+//   desktopLinkA.setAttribute('href', 'https://drive.google.com/open?id=1FZ-x49gnL7Oakhs8ziCH-eiFA78wfm6X');
+//   desktopLinkP.innerHTML = 'View PDF'
+// });
+
+// MONARCH FITNESS (INSTEAD OF CCRG)
 desktopCCRG.addEventListener('click', function() {
   document.getElementById('workPage-desktopHome').style.display = 'block';
   document.getElementById('allProjects-desktop').style.display = 'none';
   document.getElementById('featured2').style.display = 'none';
 
-  document.getElementById('workText-desktopHome').style.marginTop = "-83%";
+  document.getElementById('workText-desktopHome').style.marginTop = "-80%";
 
-  desktopTitle.innerHTML = 'COLLEGE CAREER AND READINESS GUIDE';
-  desktopCat.innerHTML = 'INFOGRAPHIC REPORT';
+  desktopTitle.innerHTML = 'MONARCH FITNESS GUIDEBOOK';
+  desktopCat.innerHTML = 'BOOK AND LAYOUT DESIGN';
 
-  document.getElementById('colorBlock-desktopHome').style.backgroundColor = '#65b7ce';
+  document.getElementById('colorBlock-desktopHome').style.backgroundColor = '#F8BF90';
   document.getElementById('colorBlock-desktopHome').style.padding = '5.5em';
 
-  document.getElementById('work-img-desktopHome').src = "images/projects/ccrg.png";
-  document.getElementById('work-img-desktopHome').alt = "CCRG Infographic Report";
+  document.getElementById('work-img-desktopHome').src = "images/projects/mf-book.png";
+  document.getElementById('work-img-desktopHome').alt = "MONARCH FITNESS GUIDEBOOK";
   document.getElementById('work-img-desktopHome').height = "638";
   document.getElementById('work-img-desktopHome').style.marginTop = "-13.5em";
 
-  document.getElementById('desktopHomeChallenge').style.backgroundColor = '#41a1b7';
+  document.getElementById('desktopHomeChallenge').style.backgroundColor = '#15B2E1';
   document.getElementById('desktopHomeChallenge-h4').style.color = '#ffffff';
   document.getElementById('desktopHomeChallengeP').style.color = '#ffffff';
-  desktopChallengeP.innerHTML = 'Create an infographic report for CCRG. The report should include an outline of a student with a grad cap and a brain in the center. Around the student will be surrounded by thought bubbles with text and images. Brainstorm and think of an illustration that would best fit inside the brain for the report. After, create a save a date for that infographic report.';
+  desktopChallengeP.innerHTML = 'Create and design a guidebook for Monarch Fitness';
 
-  document.getElementById('desktopHomeTools-h4').style.color = '#99b8d8';
+  document.getElementById('desktopHomeTools-h4').style.color = '#F79841';
   document.getElementById('desktopHomeToolsP').style.color = '#000000';
-  desktopToolsP.innerHTML = 'Adobe Illustrator<br>Atom Text Editor<br>Eclipse';
+  desktopToolsP.innerHTML = 'Adobe Illustrator <br> Adobe InDesign';
 
-  document.getElementById('desktopHomeSolution').style.backgroundColor = '#274169';
+  document.getElementById('desktopHomeSolution').style.backgroundColor = '#F79841';
   document.getElementById('desktopHomeSolution-h4').style.color = '#ffffff';
   document.getElementById('desktopHomeSolutionP1').style.color = '#ffffff';
   document.getElementById('desktopHomeSolutionP2').style.color = '#ffffff';
   document.getElementById('desktopHomeSolutionP3').style.color = '#ffffff';
-  desktopSolutionP1.innerHTML = 'For Spotlight Education, I had to create an infographic report called “College and Career Readiness Guide”. This page is the front page of the CCRG reports and acts as as an illustrated table of contents for the students and parents. The page includes up to seven bubbles, but this mockup only shows five pages. After creating the report, I had make a “Save the Date” that would then be sent through mailchimp. For this design, the client wanted it to have the image of the student with the brain and grad cap. Since the two pieces of work are related, I made sure I used the same color scheme as the infographic report for consistency.';
+  desktopSolutionP1.innerHTML = 'Monarch Fitness - 12 Week Guidebook is a 26 page guidebook that was created using Adobe InDesign. It contains a bright and bold color scheme that complements the fitness brand. I used Futura for typography to match the boldness of the design. The design was truly inspired with their monarch butterfly logo (which is made from a previous designer). ';
 
-    desktopSolutionP2.innerHTML = 'The main requirements of the report includes a student with a grad cap and a brain in the middle of the page. Around the student includes thought bubbles that represents a page of each report. The order of the pages goes from the bottom left all the up, and then to the bottom right page. Each thought bubble has the page number, title of the page, a small icon that represents the page, and brief text that directs the user to that page. The colors used for the infographic report are different shades of blue and white because it’s calm and easy on the eyes for students and parents. Inside the brain contains puzzle pieces of different subjects from school to represent.';
+    desktopSolutionP2.innerHTML = '';
 
-      desktopSolutionP3.innerHTML = 'The infographic report was made in Adobe Illustrator, but then was later implemented through Eclipse, which is an IDE. I used Eclipse to create a BIRT template of the report. For the BIRT template, I hard coded the text and images, and used CSS to style the text. The BIRT templates would be then given to our team to create params that would allow mass production of the product.';
+      desktopSolutionP3.innerHTML = '';
 
-  document.getElementById('desktopHomeLink-h4').style.color = '#65b7ce';
-  desktopLinkA.setAttribute('href', 'https://drive.google.com/open?id=1FZ-x49gnL7Oakhs8ziCH-eiFA78wfm6X');
-  desktopLinkP.innerHTML = 'View PDF'
+  document.getElementById('desktopHomeLink-h4').style.color = '#15B2E1';
+  desktopLinkA.setAttribute('href', '#');
+  desktopLinkP.innerHTML = 'N/A'
 });
 
 // CRITICA PORTFOLIO REVIEW
+// desktopCritica.addEventListener('click', function() {
+//   document.getElementById('workPage-desktopHome').style.display = 'block';
+//   document.getElementById('allProjects-desktop').style.display = 'none';
+//   document.getElementById('featured2').style.display = 'none';
+//
+//   document.getElementById('workText-desktopHome').style.marginTop = "-34%";
+//
+//   desktopTitle.innerHTML = 'CRITICA PORTFOLIO REVIEW';
+//   desktopCat.innerHTML = 'WEBSITE DESIGN';
+//
+//   document.getElementById('colorBlock-desktopHome').style.backgroundColor = '#b5cbea';
+//   document.getElementById('colorBlock-desktopHome').style.padding = '5.5em';
+//
+//   document.getElementById('work-img-desktopHome').src = "images/projects/critica.png";
+//   document.getElementById('work-img-desktopHome').alt = "Critica Portfolio Review";
+//   document.getElementById('work-img-desktopHome').height = "259";
+//   document.getElementById('work-img-desktopHome').style.marginTop = "-15em";
+//
+//   document.getElementById('desktopHomeChallenge').style.backgroundColor = '#28477c';
+//   document.getElementById('desktopHomeChallenge-h4').style.color = '#90a9d6';
+//   document.getElementById('desktopHomeChallengeP').style.color = '#ffffff';
+//   desktopChallengeP.innerHTML = 'Create a browser-based interactive exploration on your topic for DIS 2019 or C&C, hand-coded with the front-end stack and your choice (option) of a js libraries, such as p5.js, and css libraries';
+//
+//   document.getElementById('desktopHomeTools-h4').style.color = '#c24273';
+//   document.getElementById('desktopHomeToolsP').style.color = '#000000';
+//   desktopToolsP.innerHTML = 'Adobe Illustrator <br>Atom Text Editor<br>Languages: HTML, CSS, Javascript';
+//
+//   document.getElementById('desktopHomeSolution').style.backgroundColor = '#c24273';
+//   document.getElementById('desktopHomeSolution-h4').style.color = '#ffffff';
+//   document.getElementById('desktopHomeSolutionP1').style.color = '#ffffff';
+//   document.getElementById('desktopHomeSolutionP2').style.color = '#ffffff';
+//   document.getElementById('desktopHomeSolutionP3').style.color = '#ffffff';
+//   desktopSolutionP1.innerHTML = 'For this project, the topic I chose was education for graphic designers called Critica. Critica is an online community for all designers to help improve their online portfolio. The goal of the website is to give more opportunities to designers who do not have the proper resources to constantly improve their work. For instance, there are many designers out there that are not in any college programs or don’t know any other designers/professors that can help them properly critique their work. ';
+//
+//       desktopSolutionP2.innerHTML = 'Critica is unique from known portfolio websites like Behance and Dribbble because it does not focus on showcasing work but it focuses on improving each other’s work. The design focuses on a playful and inviting environment for designers with functionalities that allows users to upload their work and have designers add comments on how it can improve. The website contains specific guidelines to help users give constructive criticism rather than saying something is “good” or “bad”.';
+//
+//         desktopSolutionP3.innerHTML = '<strong>How it works:</strong> This is a working prototype with limited functions. It contains one html file and uses javascript to give it the behavior or multiple pages. It includes a community page with three pieces of work that the user can click on. It will then direct users to the page of the work selected, and the users can drag around the image and write comments. If the user is new, they can select “Get Started” and it will take them to the community page with pop up that has instructions on how to critique a piece of work. The next page is an upload pop up page. This is where users can put their work in the website by uploading the file, project name, designer’s name, and description. It will later then be sent for approval by moderators. (For the prototype, users can upload files and input text, but it will not be processed). The last page is the guidelines, which informs users on rules and tips.';
+//
+//   document.getElementById('desktopHomeLink-h4').style.color = '#28477c';
+//   desktopLinkA.setAttribute('href', 'https://angcim.github.io/des157-g/process/development/final/index.html');
+//   desktopLinkP.innerHTML = 'Critica Portfolio Review'
+// });
+
+// GC MOBILE MOCKUPS (INSTEAD OF CRITICA)
 desktopCritica.addEventListener('click', function() {
   document.getElementById('workPage-desktopHome').style.display = 'block';
   document.getElementById('allProjects-desktop').style.display = 'none';
   document.getElementById('featured2').style.display = 'none';
 
-  document.getElementById('workText-desktopHome').style.marginTop = "-34%";
+  document.getElementById('workText-desktopHome').style.marginTop = "-78%";
 
-  desktopTitle.innerHTML = 'CRITICA PORTFOLIO REVIEW';
-  desktopCat.innerHTML = 'WEBSITE DESIGN';
+  desktopTitle.innerHTML = 'GUIDELINE CENTRAL MOBILE MOCKUPS';
+  desktopCat.innerHTML = 'USER INTERFACE / USER EXPERIENCE';
 
-  document.getElementById('colorBlock-desktopHome').style.backgroundColor = '#b5cbea';
+  document.getElementById('colorBlock-desktopHome').style.backgroundColor = '#275067';
   document.getElementById('colorBlock-desktopHome').style.padding = '5.5em';
 
-  document.getElementById('work-img-desktopHome').src = "images/projects/critica.png";
-  document.getElementById('work-img-desktopHome').alt = "Critica Portfolio Review";
+  document.getElementById('work-img-desktopHome').src = "images/projects/guidelinecentral.png";
+  document.getElementById('work-img-desktopHome').alt = "GUIDELINE CENTRAL MOBILE MOCKUPS";
   document.getElementById('work-img-desktopHome').height = "259";
-  document.getElementById('work-img-desktopHome').style.marginTop = "-15em";
+  document.getElementById('work-img-desktopHome').style.marginTop = "-13em";
 
-  document.getElementById('desktopHomeChallenge').style.backgroundColor = '#28477c';
-  document.getElementById('desktopHomeChallenge-h4').style.color = '#90a9d6';
+  document.getElementById('desktopHomeChallenge').style.backgroundColor = '#1D8FBB';
+  document.getElementById('desktopHomeChallenge-h4').style.color = '#ffffff';
   document.getElementById('desktopHomeChallengeP').style.color = '#ffffff';
-  desktopChallengeP.innerHTML = 'Create a browser-based interactive exploration on your topic for DIS 2019 or C&C, hand-coded with the front-end stack and your choice (option) of a js libraries, such as p5.js, and css libraries';
+  desktopChallengeP.innerHTML = 'Create mobile designs for Guideline Central.';
 
-  document.getElementById('desktopHomeTools-h4').style.color = '#c24273';
+  document.getElementById('desktopHomeTools-h4').style.color = '#ACD3E4';
   document.getElementById('desktopHomeToolsP').style.color = '#000000';
-  desktopToolsP.innerHTML = 'Adobe Illustrator <br>Atom Text Editor<br>Languages: HTML, CSS, Javascript';
+  desktopToolsP.innerHTML = 'Adobe Illustrator <br> InVision App';
 
-  document.getElementById('desktopHomeSolution').style.backgroundColor = '#c24273';
+  document.getElementById('desktopHomeSolution').style.backgroundColor = '#578EB4';
   document.getElementById('desktopHomeSolution-h4').style.color = '#ffffff';
   document.getElementById('desktopHomeSolutionP1').style.color = '#ffffff';
   document.getElementById('desktopHomeSolutionP2').style.color = '#ffffff';
   document.getElementById('desktopHomeSolutionP3').style.color = '#ffffff';
-  desktopSolutionP1.innerHTML = 'For this project, the topic I chose was education for graphic designers called Critica. Critica is an online community for all designers to help improve their online portfolio. The goal of the website is to give more opportunities to designers who do not have the proper resources to constantly improve their work. For instance, there are many designers out there that are not in any college programs or don’t know any other designers/professors that can help them properly critique their work. ';
+  desktopSolutionP1.innerHTML = 'For Guideline Central, my main project was to create mobile responsive designs for the website while still maintaining the brand and functionalities. The mobile designs were created using Adobe Illustrator and then prototyped using Invision App. To start, I brainstormed and looked through the desktop version of the website. I experimented with different design techniques and principlese to put all of the content in a smaller screen. After the mockups were finished, I then implement the design through Invision App to test the functionalty and flow of the design. ';
 
-      desktopSolutionP2.innerHTML = 'Critica is unique from known portfolio websites like Behance and Dribbble because it does not focus on showcasing work but it focuses on improving each other’s work. The design focuses on a playful and inviting environment for designers with functionalities that allows users to upload their work and have designers add comments on how it can improve. The website contains specific guidelines to help users give constructive criticism rather than saying something is “good” or “bad”.';
+      desktopSolutionP2.innerHTML = 'Some solutions I came up with in comparison with the website is implementing buttons and creating new modals for the webpages. One of the challenges I faced was working with multiple navigations in one screen. The pocket guide contains four navigations (including the main navigation) and I had to find a way to distinguish each one. To successfully achieve having multiple navigations in one screen, I had to make each one different. The main navigation uses the hamburger icon, the subnavigation is a horizontal scroll, the third navigation are a horizontal navigation with different colors from the subnavigation (to avoid confusion), and a drop down table of contents.';
 
-        desktopSolutionP3.innerHTML = '<strong>How it works:</strong> This is a working prototype with limited functions. It contains one html file and uses javascript to give it the behavior or multiple pages. It includes a community page with three pieces of work that the user can click on. It will then direct users to the page of the work selected, and the users can drag around the image and write comments. If the user is new, they can select “Get Started” and it will take them to the community page with pop up that has instructions on how to critique a piece of work. The next page is an upload pop up page. This is where users can put their work in the website by uploading the file, project name, designer’s name, and description. It will later then be sent for approval by moderators. (For the prototype, users can upload files and input text, but it will not be processed). The last page is the guidelines, which informs users on rules and tips.';
+        desktopSolutionP3.innerHTML = '';
 
-  document.getElementById('desktopHomeLink-h4').style.color = '#28477c';
-  desktopLinkA.setAttribute('href', 'https://angcim.github.io/des157-g/process/development/final/index.html');
-  desktopLinkP.innerHTML = 'Critica Portfolio Review'
+  document.getElementById('desktopHomeLink-h4').style.color = '#275067';
+  desktopLinkA.setAttribute('href', 'https://invis.io/8TZ1D4JA346#/434137538_Mobile_Browse_Guidelines_Logged_Out');
+  desktopLinkP.innerHTML = 'Guideline Central Landing Pages Prototype'
 });
 
 // INDULDGE IN ABUNDANCE

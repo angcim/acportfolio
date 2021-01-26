@@ -1386,12 +1386,12 @@ footer p {
       grid-template-rows: 25% 25% 25%;
     }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve{
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen{
   display: block;
 
 }
 
-#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #ten:hover, #eleven:hover, #twelve:hover {
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #ten:hover, #eleven:hover, #twelve:hover, #thirteen:hover, #fourteen:hover {
   border-radius: 50%;
   transition: opacity 0.5s ease-in-out ;
   opacity: 0.5;
